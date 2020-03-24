@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марина Куклина](https://up.htmlacademy.ru/adaptive/19/user/1052685).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Скубида] (https://htmlacademy.ru/profile/id1210299).
 
 ---
 
