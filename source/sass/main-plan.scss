@@ -1,0 +1,41 @@
+.main-plan {
+  background-color: $main-color;
+  margin-bottom: 12px;
+}
+
+.main-plan__item {
+  padding-top: 39px;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
+  background-color: rgb(242, 242, 242);
+}
+
+.main-plan__title {
+  padding-left: 92px;
+  margin-bottom: 36px;
+  @include intro-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: left;
+  text-transform: $uppercase;
+  color: $title-color;
+}
+
+.main-plan__information {
+  margin-bottom: 44px;
+  @include intro-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: $text-color;
+}
+
+.main-plan__link {
+  @include intro-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  text-transform: $uppercase;
+  text-decoration: $notunderline;
+  color: $title-color;
+}

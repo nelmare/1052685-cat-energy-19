@@ -1,0 +1,17 @@
+.catalog-main {
+  @include intro-font;
+  background-color: $main-color;
+  padding: 20px;
+}
+
+.catalog-main__title {
+  margin-top: 12px;
+  margin-bottom: 36px;
+  margin-left: 2px;
+  margin-right: auto;
+  font-size: 36px;
+  line-height: 60px;
+  color: $title-color;
+}
+
+

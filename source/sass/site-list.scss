@@ -1,0 +1,12 @@
+.site-list__item {
+  padding-top: 24px;
+  padding-left: 24px;
+  a {
+    @include intro-font;
+    text-decoration: $notunderline;
+    color: $title-color;
+    font-weight: 500;
+  }
+}
+
+

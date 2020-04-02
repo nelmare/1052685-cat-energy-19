@@ -1,0 +1,23 @@
+.advantages {
+  margin-bottom: 22px;
+  background-color: $main-color;
+}
+
+.advantages__title {
+  @include intro-font;
+  font-size: 36px;
+  line-height: 60px;
+  text-align: left;
+  color: $title-color;
+}
+
+.advantages__item {
+  padding-left: 100px;
+  margin-bottom: 20px;
+  @include intro-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: $text-color;
+}
+
