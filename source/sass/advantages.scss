@@ -4,7 +4,7 @@
 }
 
 .advantages__title {
-  @include intro-font;
+  @include project-font;
   font-size: 36px;
   line-height: 60px;
   text-align: left;
@@ -14,7 +14,7 @@
 .advantages__item {
   padding-left: 100px;
   margin-bottom: 20px;
-  @include intro-font;
+  @include project-font;
   font-size: 14px;
   line-height: 18px;
   text-align: left;

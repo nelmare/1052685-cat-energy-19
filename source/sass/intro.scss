@@ -7,7 +7,7 @@
 }
 
 .intro__description {
-  @include intro-font;
+  @include project-font;
   margin-top: 29px;
   font-size: 36px;
   line-height: 36px;
@@ -16,7 +16,7 @@
 }
 
 .intro__slogan {
-  @include intro-font;
+  @include project-font;
   margin-bottom: 29px;
   font-size: 14px;
   line-height: 14px;

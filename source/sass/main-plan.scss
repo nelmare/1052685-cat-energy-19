@@ -13,7 +13,7 @@
 .main-plan__title {
   padding-left: 92px;
   margin-bottom: 36px;
-  @include intro-font;
+  @include project-font;
   font-size: 24px;
   line-height: 37px;
   text-align: left;
@@ -23,7 +23,7 @@
 
 .main-plan__information {
   margin-bottom: 44px;
-  @include intro-font;
+  @include project-font;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
@@ -31,7 +31,7 @@
 }
 
 .main-plan__link {
-  @include intro-font;
+  @include project-font;
   font-size: 16px;
   line-height: 16px;
   text-align: left;
