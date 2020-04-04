@@ -1,0 +1,13 @@
+@mixin add-font {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: left;
+  color: $text-color;
+}
+
+@mixin margin-reset {
+  margin: 0;
+  padding: 0;
+}

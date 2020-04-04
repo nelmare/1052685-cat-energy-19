@@ -1,0 +1,31 @@
+.intro {
+  padding-top: 29px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro__description {
+  margin-bottom: 19px;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  color: $mainback-color;
+}
+
+.intro__slogan {
+  margin-bottom: 29px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $mainback-color;
+}
+
+.intro__image {
+  width: 280px;
+  height: 270px;
+  margin-bottom: 3px;
+  background-color: transparent;
+}
+
