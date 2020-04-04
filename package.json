@@ -38,6 +38,7 @@
     "node": "8.16"
   },
   "dependencies": {
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "normalize.scss": "^0.1.0"
   }
 }

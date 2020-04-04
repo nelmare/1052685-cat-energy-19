@@ -1,12 +1,11 @@
 .copyright {
-  padding: 22px 20px 22px 20px;
+  margin-top: 22px;
 }
 
 .copyright__link {
-  font-family: Arial, sans-serif;
+  @include add-font;
   font-size: 16px;
   line-height: 16px;
-  text-align: left;
   text-decoration: $notunderline;
-  color: $text-color;
+  text-transform: none;
 }

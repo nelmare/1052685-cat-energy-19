@@ -1,3 +1,8 @@
+.catalog-item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .catalog-item__wrapper {
   margin-bottom: 23px;
 }
@@ -8,22 +13,18 @@
 }
 
 .catalog-item__title {
-    @include project-font;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    text-decoration: $notunderline;
-    color: $title-color;
+  @include margin-reset;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: $notunderline;
+  color: $title-color;
 }
 
 .catalog-item__description {
-  font-family: Arial, sans-serif;
-  font-weight: 400;
+  @include add-font;
   font-size: 12px;
   line-height: 16px;
-  color: $text-color;
+  text-transform: none;
 }
 
 .catalog-item__button {
@@ -31,33 +32,27 @@
 }
 
 .catalog-item--add {
-  margin: 0;
-  padding: 0;
+  @include margin-reset;
   padding-top: 83px;
   padding-bottom: 25px;
   text-align: center;
 }
 
 .catalog-title--add {
-  margin: 0;
-  padding: 0;
+  @include margin-reset;
   margin-bottom: 11px;
   text-align: center;
 }
 
 .catalog-item__description--add {
-  margin: 0;
+  @include margin-reset;
   margin-bottom: 11px;
-  padding: 0;
   text-align: center;
 }
 
 .catalog-item__button-add {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: $uppercase;
   text-decoration: $notunderline;
   text-align: center;
   color: $text-color;
-  background-color: rgb(242, 242, 242);
+  background-color: $addback-color;
 }

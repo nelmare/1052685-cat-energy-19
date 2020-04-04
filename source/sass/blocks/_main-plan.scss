@@ -1,0 +1,54 @@
+
+
+.main-plan__list {
+  @include margin-reset;
+  list-style: none;
+}
+
+.main-plan__button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $mainback-color;
+  text-decoration: $notunderline;
+}
+
+.main-plan__item {
+  padding-top: 39px;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
+  background-color: $addback-color;
+}
+
+.main-plan__title {
+  @include margin-reset;
+  padding-left: 92px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+}
+
+.main-plan__title--slim {
+  margin-bottom: 36px;
+}
+
+.main-plan__title--pro {
+  margin-bottom: 39px;
+}
+
+.main-plan__information {
+  @include add-font;
+  @include margin-reset;
+  margin-bottom: 44px;
+  line-height: 18px;
+  text-transform: none;
+}
+
+.main-plan__link {
+  line-height: 16px;
+  text-decoration: $notunderline;
+  color: $title-color;
+}
+

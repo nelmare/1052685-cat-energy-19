@@ -1,31 +1,31 @@
 .intro {
-  width: 320px;
-  background-color: $main-color;
+  padding-top: 29px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .intro__description {
-  @include project-font;
-  margin-top: 29px;
+  margin-bottom: 19px;
   font-size: 36px;
   line-height: 36px;
-  text-transform: $uppercase;
-  color: $main-color;
+  text-align: center;
+  text-decoration: none;
+  color: $mainback-color;
 }
 
 .intro__slogan {
-  @include project-font;
   margin-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
-  text-transform: $uppercase;
-  color: $main-color;
+  text-align: center;
+  color: $mainback-color;
 }
 
 .intro__image {
   width: 280px;
   height: 270px;
+  margin-bottom: 3px;
   background-color: transparent;
 }
+

@@ -1,0 +1,27 @@
+.advantages {
+  margin-bottom: 22px;
+  padding-top: 12px;
+}
+
+.advantages__title {
+  @include margin-reset;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.advantages__list {
+  @include margin-reset;
+  list-style: none;
+}
+
+.advantages__item {
+  @include add-font;
+  @include margin-reset;
+  padding-left: 100px;
+  margin-bottom: 20px;
+  line-height: 18px;
+  text-transform: none;
+}
+
