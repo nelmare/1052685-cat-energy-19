@@ -1,0 +1,14 @@
+.contacts__wrapper {
+  padding: 31px 25px 26px 19px;
+  background-color: $addback-color;
+}
+
+.contacts__invite {
+  @include margin-reset;
+}
+
+.contacts__address {
+  @include add-font;
+  @include margin-reset;
+  text-transform: none;
+}

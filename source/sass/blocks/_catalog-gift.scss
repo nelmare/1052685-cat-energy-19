@@ -1,0 +1,19 @@
+.catalog-gift {
+  @include margin-reset;
+  width: 280px;
+  height: 289px;
+  padding: 39px 20px 35px 20px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog-gift__text {
+  @include margin-reset;
+  @include add-font;
+  padding-top: 190px;
+  font-size: 16px;
+  text-align: center;
+  color: $mainback-color;
+  text-transform: none;
+}
