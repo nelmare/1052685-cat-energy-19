@@ -4,5 +4,6 @@
 }
 
 .social__list {
+  @include margin-reset;
   list-style: none;
 }

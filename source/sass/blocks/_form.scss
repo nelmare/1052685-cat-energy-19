@@ -1,0 +1,61 @@
+.form {
+  padding-bottom: 34px;
+}
+
+.form__block {
+  @include margin-reset;
+}
+
+.form__block--cat {
+  padding-bottom: 23px;
+}
+
+.form__label {
+  color: rgb(34, 34, 34);
+  line-height: 18px;
+}
+
+.form__placeholder {
+  color: $text-color;
+  line-height: 18px;
+  text-transform: $uppercase;
+}
+
+.form__block--radio {
+  padding-top: 21px;
+  padding-left: 66px;
+}
+
+.form__list {
+  @include margin-reset;
+  list-style: none;
+}
+
+.form__item--radio {
+  margin-bottom: 26px;
+}
+
+.form__block-legend {
+  @include margin-reset;
+  padding-top: 31px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: none;
+}
+
+.form__item--checkbox {
+  margin-bottom: 28px;
+}
+
+.form__checkbox-name {
+  padding-left: 66px;
+}
+
+.form__name-legend {
+  @include add-font;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+}

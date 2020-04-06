@@ -1,0 +1,19 @@
+.form-main {
+  padding: 30px 20px 34px 20px;
+}
+
+.form-main__title {
+  @include margin-reset;
+  margin-bottom: 35px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  text-transform: none;
+}
+
+.form-main__legend {
+  @include margin-reset;
+  margin-bottom: 39px;
+  font-size: 14px;
+  line-height: 18px;
+}

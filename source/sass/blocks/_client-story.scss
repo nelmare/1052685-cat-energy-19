@@ -1,0 +1,43 @@
+.client-story {
+  padding: 33px 20px 38px 20px;
+  background-color: $addback-color;
+}
+
+.client-story__title {
+  @include margin-reset;
+  margin-bottom: 33px;
+  font-size: 36px;
+  line-height: 60px;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.client-story__text {
+  @include margin-reset;
+  @include add-font;
+  margin-bottom: 27px;
+  line-height: 18px;
+  text-transform: none;
+}
+
+.client-story__value {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.client-story__description {
+  @include add-font;
+  margin-bottom: 25px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.client-story__cost {
+  margin-bottom: 44px;
+  font-size: 14px;
+  text-align: center;
+}
