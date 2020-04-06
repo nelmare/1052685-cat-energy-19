@@ -1,4 +1,6 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   padding-top: 11px;
   padding-bottom: 15px;
   padding-left: 20px;
@@ -11,3 +13,32 @@
   height: 39px;
 }
 
+.page-header__logo {
+  height: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__logo {
+      width: 174px;
+      height: 59px;
+    }
+    &__toggle {
+      display: none;
+    }
+    &__wrapper {
+      width: 174px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    height: 113px;
+    width: 203px;
+  }
+}
