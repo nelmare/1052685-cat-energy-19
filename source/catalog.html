@@ -8,12 +8,14 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт Энерджи">
-      </a>
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт Энерджи">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -26,14 +28,17 @@
           </li>
         </ul>
       </nav>
+      </div>
     </header>
 
     <main class="catalog-main">
+
 
       <h1 class="catalog-main__title">Каталог продукции</h1>
 
       <h2 class="visually-hidden">Главные товары</h2>
 
+      <div class="catalog-main__container">
       <section class="catalog-item">
         <div class="catalog-item__wrapper">
           <div class="catalog-item__picture-container">
@@ -228,8 +233,11 @@
         <p class="catalog-item__description catalog-item__description--add">На самом деле вкусов гораздо больше!</p>
         <a class="catalog-item__button-add" href="#">Показать все</a>
       </section>
+      </div>
 
+      <div class="catalog-part__container">
       <div class="catalog-part">
+
         <h2 class="catalog-part__title">Дополнительные товары</h2>
         <section class="catalog-part__item">
           <h3 class="catalog-part__item-title">Сахарозаменитель</h3>
@@ -266,13 +274,15 @@
           </div>
           <a class="button catalog-item__button" href="#">Заказать</a>
         </section>
+        </div>
       </div>
 
       <div class="catalog-gift">
         <p class="catalog-gift__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
+      </div>
 
-      <section class="contacts">
+      <section class="contacts contacts-inner">
         <div class="contacts__wrapper">
           <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -286,6 +296,7 @@
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer__container">
       <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Кэт Энерджи">
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -303,6 +314,7 @@
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__logo-image" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </div>
       </div>
     </footer>
   </body>

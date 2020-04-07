@@ -1,23 +1,21 @@
-
+.main-plan {
+  width: 280px;
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
 
 .main-plan__list {
   @include margin-reset;
   list-style: none;
 }
 
-.main-plan__button {
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 22px;
-  font-size: 14px;
-  line-height: 18px;
-  color: $mainback-color;
-  text-decoration: $notunderline;
-}
-
 .main-plan__item {
   padding-top: 39px;
   padding-bottom: 22px;
+  padding-left: 21px;
+  padding-right: 36px;
   margin-bottom: 20px;
   background-color: $addback-color;
 }
@@ -50,5 +48,32 @@
   line-height: 16px;
   text-decoration: $notunderline;
   color: $title-color;
+}
+
+@media (min-width: $tablet-width) {
+  .main-plan {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-plan__container {
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-plan__container {
+    width: 1220px;
+  }
+
+  .main-plan__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-plan__item:nth-child(2n+1) {
+    margin-right: 80px;
+  }
 }
 

@@ -1,6 +1,15 @@
+//.contacts {
+//  padding: 31px 25px 26px 19px;
+//}
+
+.contacts-inner {
+  background-color: $addback-color;
+}
+
 .contacts__wrapper {
   padding: 31px 25px 26px 19px;
-  background-color: $addback-color;
+  //padding-right: 20px;
+  //padding-left: 20px;
 }
 
 .contacts__invite {

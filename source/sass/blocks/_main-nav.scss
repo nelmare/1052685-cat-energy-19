@@ -1,5 +1,5 @@
 .main-nav {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
   font-size: 20px;
   font-weight: 500;
@@ -9,13 +9,22 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 440px;
-    display: flex;
     margin: 0;
+  }
+
+  .main-nav__list {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    width: 480px;
+  }
+
+  .main-nav__list {
     width: 480px;
   }
 }
