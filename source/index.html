@@ -9,26 +9,26 @@
   <body>
     <header class="page-header">
       <div class="page-header__container">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт Энерджи">
-        </a>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <div class="page-header__wrapper">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт Энерджи">
+          </a>
+          <button class="page-header__toggle" type="button">Открыть меню</button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
     </header>
 
     <main class="page-main">
@@ -70,51 +70,53 @@
       <section class="advantages ">
         <div class="advantages__container">
           <h2 class="advantages__title">Как это работает</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--usefulness">Функциональное питание содержит только полезные
-            питательные вещества.
-          </li>
-          <li class="advantages__item advantages__item--powder">Выпускается в виде порошка, который нужно лишь залить
-            кипятком и готово.
-          </li>
-          <li class="advantages__item advantages__item--eating">Замените один-два приема обычной еды на наше
-            функциональное питание.
-          </li>
-          <li class="advantages__item advantages__item--change">Уже через месяц наслаждайтесь изменениями к лучшему
-            вашего питомца!
-          </li>
-        </ul>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--usefulness">Функциональное питание содержит только полезные
+              питательные вещества.
+            </li>
+            <li class="advantages__item advantages__item--powder">Выпускается в виде порошка, который нужно лишь залить
+              кипятком и готово.
+            </li>
+            <li class="advantages__item advantages__item--eating">Замените один-два приема обычной еды на наше
+              функциональное питание.
+            </li>
+            <li class="advantages__item advantages__item--change">Уже через месяц наслаждайтесь изменениями к лучшему
+              вашего питомца!
+            </li>
+          </ul>
         </div>
       </section>
 
       <section class="client-story">
-        <h2 class="client-story__title">Живой пример</h2>
-        <p class="client-story__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-          в день.</p>
-        <div class="client-story__item">
-          <b class="client-story__value">5 кг</b>
-          <span class="client-story__description">снижение веса</span>
-        </div>
-        <div class="client-story__item">
-          <b class="client-story__value">60 дней</b>
-          <span class="client-story__description">затрачено времени</span>
-        </div>
-        <p class="client-story__cost">Затраты на питание: 15 000 руб.</p>
-        <fieldset class="client-story__switcher-wrapper switcher">
-          <img class="switcher__image switcher__image--before" src="img/before-mobile@1x.png" width="311" height="232"
-                alt="Фотография кота Бориса до участия в программе">
-          <img class="switcher__image switcher__image--after" src="img/after-mobile@1x.png" width="311" height="232"
-                alt="Фотография кота Бориса до участия в программе">
-          <div class="switcher__container">
-            <button class="switcher__item" type="button">Было</button>
-            <label class="switcher__scale">
-              <input class="switcher__mark" type="checkbox">
-              <span class="switcher__slider"></span>
-            </label>
-            <button class="switcher__item" type="button">Стало</button>
+        <div>
+          <h2 class="client-story__title">Живой пример</h2>
+          <p class="client-story__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
+            в день.</p>
+          <div class="client-story__item">
+            <b class="client-story__value">5 кг</b>
+            <span class="client-story__description">снижение веса</span>
           </div>
-        </fieldset>
+          <div class="client-story__item">
+            <b class="client-story__value">60 дней</b>
+            <span class="client-story__description">затрачено времени</span>
+          </div>
+          <p class="client-story__cost">Затраты на питание: 15 000 руб.</p>
+          <fieldset class="client-story__switcher-wrapper switcher">
+            <img class="switcher__image switcher__image--before" src="img/before-mobile@1x.png" width="311" height="232"
+                  alt="Фотография кота Бориса до участия в программе">
+            <img class="switcher__image switcher__image--after" src="img/after-mobile@1x.png" width="311" height="232"
+                  alt="Фотография кота Бориса до участия в программе">
+            <div class="switcher__container">
+              <button class="switcher__item" type="button">Было</button>
+              <label class="switcher__scale">
+                <input class="switcher__mark" type="checkbox">
+                <span class="switcher__slider"></span>
+              </label>
+              <button class="switcher__item" type="button">Стало</button>
+            </div>
+          </fieldset>
+        </div>
       </section>
 
       <section class="contacts">
@@ -132,24 +134,24 @@
 
     <footer class="page-footer">
       <div class="page-footer__container">
-      <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Кэт Энерджи">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Кэт Энерджи в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Кэт Энерджи в Инстаграмм</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Кэт Энерджи в Фейсбук</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__logo-image" href="https://htmlacademy.ru/intensive/adaptive"></a>
-      </div>
+        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Кэт Энерджи">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">Кэт Энерджи в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">Кэт Энерджи в Инстаграмм</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Кэт Энерджи в Фейсбук</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__logo-image" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </div>
       </div>
     </footer>
   </body>
