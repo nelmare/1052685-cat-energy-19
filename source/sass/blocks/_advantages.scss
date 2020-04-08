@@ -76,8 +76,8 @@
   //}
 
   .advantages__item {
-    width: 244px;
     @include margin-reset;
+    width: 244px;
     margin-bottom: 20px;
   }
 }
