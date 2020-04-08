@@ -1,6 +1,7 @@
-//.contacts {
-//  padding: 31px 25px 26px 19px;
-//}
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+}
 
 .contacts-inner {
   background-color: $addback-color;
@@ -8,16 +9,43 @@
 
 .contacts__wrapper {
   padding: 31px 25px 26px 19px;
+  display: flex;
+  justify-content: space-between;
   //padding-right: 20px;
   //padding-left: 20px;
 }
 
 .contacts__invite {
   @include margin-reset;
+  width: 123px;
 }
 
 .contacts__address {
   @include add-font;
   @include margin-reset;
   text-transform: none;
+  width: 135px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: auto;
+    margin: 0;
+  }
+
+  .contacts__wrapper {
+    width: 631px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    width: 570px;
+    margin-bottom: -205px;
+    right: 200px;
+    background-color: $addback-color;
+    position: relative;
+    z-index: 2;
+  }
 }

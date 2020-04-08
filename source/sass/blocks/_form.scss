@@ -8,11 +8,18 @@
 
 .form__block--cat {
   padding-bottom: 23px;
+  border: none;
 }
 
 .form__label {
   color: rgb(34, 34, 34);
   line-height: 18px;
+}
+
+.form__line {
+  border: solid 1px rgb(205, 205, 205);
+  min-height: 45px;
+  margin-bottom: 14px;
 }
 
 .form__placeholder {
@@ -21,14 +28,32 @@
   text-transform: $uppercase;
 }
 
+.form__line--catname {
+  width: 229px;
+}
+
+.form__line--weight {
+  width: 204px;
+}
+
+.form__line--age {
+  width: 172px;
+}
+
 .form__block--radio {
-  padding-top: 21px;
-  padding-left: 66px;
+  width: auto;
+  margin: 0 -19px;
 }
 
 .form__list {
   @include margin-reset;
   list-style: none;
+}
+
+.form__list--radio {
+  padding-top: 21px;
+  padding-left: 66px;
+  box-sizing: border-box;
 }
 
 .form__item--radio {
@@ -58,4 +83,24 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form__list--plus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__item--checkbox {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    width: 570px;
+    display: flex;
+    justify-content: space-between;
+  }
 }

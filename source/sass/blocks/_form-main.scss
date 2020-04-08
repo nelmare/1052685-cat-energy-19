@@ -1,5 +1,8 @@
 .form-main {
   padding: 30px 20px 34px 20px;
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .form-main__title {
@@ -16,4 +19,28 @@
   margin-bottom: 39px;
   font-size: 14px;
   line-height: 18px;
+  width: 226px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-main {
+    padding: 30px 30px 34px 30px;
+    width: auto;
+    margin: 0;
+  }
+
+  .form-main__container {
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-main {
+    padding: 30px 40px 34px 40px;
+  }
+
+  .form-main__container {
+    width: 1220px;
+  }
 }
