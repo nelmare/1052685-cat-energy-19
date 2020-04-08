@@ -13,6 +13,10 @@
   width: 320px;
 }
 
+.intro__wrapper {
+  position: relative;
+}
+
 .intro__description {
   @include margin-reset;
   margin-bottom: 19px;
@@ -37,7 +41,7 @@
   height: 270px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 3px;
+  margin-bottom: 65px;
   background-color: transparent;
 }
 
@@ -50,10 +54,9 @@
   color: $mainback-color;
   text-decoration: $notunderline;
   margin: 0 auto;
-}
-
-.intro__button--tablet {
-  display: none;
+  position: absolute;
+  top: 430px;
+  left: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -87,14 +90,8 @@
   .intro__button {
     width: 245px;
     position: absolute;
-  }
-
-  .intro__button--mobile {
-    display: none;
-  }
-
-  .intro__button--tablet {
-    display: block;
+    left: 120px;
+    top: 130px;
   }
 
   .intro__image {
@@ -148,5 +145,6 @@
     font-size: 20px;
     line-height: 20px;
     margin-right: auto;
+    top: 210px;
   }
 }

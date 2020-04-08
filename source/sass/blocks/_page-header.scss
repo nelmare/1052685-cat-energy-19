@@ -3,6 +3,8 @@
   flex-direction: column;
   margin: 0 auto;
   width: 320px;
+  border-bottom: 1px solid rgb(217, 217, 217);
+  box-sizing: border-box;
 }
 
 .page-header__logo-image {
@@ -26,6 +28,7 @@
     padding-right: 31px;
     padding-left: 29px;
     margin: 0;
+    border: none;
   }
 
   .page-header__container {
@@ -51,12 +54,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  body {
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 720px 696px;
-  }
+  //body {
+  //  background-image: url("../img/index-background-desktop@1x.jpg");
+  //  background-position: top right;
+  //  background-repeat: no-repeat;
+  //  background-size: 720px 696px;
+  //}
 
   .page-header {
     width: 1300px;
