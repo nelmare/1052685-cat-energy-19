@@ -1,17 +1,32 @@
 .intro {
   padding-top: 29px;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  //background-image: url("../img/index-background-mobile@1x.jpg");
+  //background-position: top;
+  //background-repeat: no-repeat;
+  //padding-right: 20px;
+  //padding-left: 20px;
+  width: 320px;
+  margin: 0 auto;
+
+}
+
+.intro__container {
+  width: 320px;
+}
+
+.intro__wrapper {
+  //position: relative;
 }
 
 .intro__description {
+  @include margin-reset;
   margin-bottom: 19px;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
   text-decoration: none;
   color: $mainback-color;
+  text-transform: none;
 }
 
 .intro__slogan {
@@ -25,7 +40,111 @@
 .intro__image {
   width: 280px;
   height: 270px;
-  margin-bottom: 3px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 65px;
   background-color: transparent;
 }
 
+.intro__button {
+  width: 280px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 18px;
+  color: $mainback-color;
+  text-decoration: $notunderline;
+  margin: 0 auto;
+  top: 430px;
+  left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background-image: none;
+    width: auto;
+    margin: 0;
+  }
+
+  .intro__container {
+    width: 709px;
+    margin: 0;
+  }
+
+  .intro__wrapper {
+    width: 410px;
+    position: relative;
+    padding-left: 120px;
+  }
+
+  .intro__description {
+    color: $title-color;
+    text-align: left;
+  }
+
+  .intro__slogan {
+    color: $title-color;
+    text-align: left;
+  }
+
+  .intro__button {
+    width: 245px;
+    position: absolute;
+    left: 150px;
+    top: 250px;
+  }
+
+  .intro__image {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    padding-top: 48px;
+  }
+
+  .intro__container {
+    display: flex;
+    width: 922px;
+  }
+
+  .intro__wrapper {
+    width: 415px;
+    padding-left: 120px;
+    text-align: left;
+    margin-bottom: 268px;
+    z-index: 2;
+  }
+
+  .intro__image {
+    display: inline;
+    margin: 0;
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    left: 400px;
+  }
+
+  .intro__description {
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 33px;
+  }
+
+  .intro__slogan {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .intro__button {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: auto;
+    top: 210px;
+  }
+}

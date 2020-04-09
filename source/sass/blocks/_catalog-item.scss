@@ -1,6 +1,15 @@
 .catalog-item {
   padding-top: 25px;
   padding-bottom: 25px;
+  width: 320px;
+  border-bottom: 1px solid rgb(217, 217, 217);
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.catalog-item:first-of-type {
+  border-top: 1px solid rgb(217, 217, 217);
 }
 
 .catalog-item__wrapper {
@@ -55,4 +64,25 @@
   text-align: center;
   color: $text-color;
   background-color: $addback-color;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    width: 324px;
+    padding: 16px 37px 39px 40px;
+    box-sizing: border-box;
+    border: none;
+    background: $addback-color;
+    margin-bottom: 92px;
+  }
+
+  .catalog-item:first-of-type {
+    border-top: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-item {
+    width: 245px;
+  }
 }
