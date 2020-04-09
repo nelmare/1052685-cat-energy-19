@@ -23,9 +23,7 @@
 
 .page-header--background {
   position: relative;
-}
 
-.page-header--background {
   &::after {
     content: "";
     background-image: url("../img/index-background-mobile@1x.jpg");
