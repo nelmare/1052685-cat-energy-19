@@ -4,11 +4,11 @@
 
 .form__block {
   @include margin-reset;
+  border: none;
 }
 
 .form__block--cat {
   padding-bottom: 23px;
-  border: none;
 }
 
 .form__label {
@@ -43,6 +43,7 @@
 .form__block--radio {
   width: auto;
   margin: 0 -19px;
+  border: solid 1px rgb(237, 237, 237);
 }
 
 .form__list {
@@ -70,6 +71,21 @@
   text-transform: none;
 }
 
+.form__line--email {
+  width: 219px;
+}
+
+.form__line--phone {
+  width: 204px;
+}
+
+.form__textarea {
+  border: solid 1px rgb(205, 205, 205);
+  width: 280px;
+  height: 150px;
+  box-sizing: border-box;
+}
+
 .form__item--checkbox {
   margin-bottom: 28px;
 }
@@ -83,6 +99,11 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
+}
+
+.form__button {
+  width: 280px;
+  margin-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
