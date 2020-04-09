@@ -1,12 +1,13 @@
 .intro {
   padding-top: 29px;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
+  //background-image: url("../img/index-background-mobile@1x.jpg");
+  //background-position: top;
+  //background-repeat: no-repeat;
   //padding-right: 20px;
   //padding-left: 20px;
   width: 320px;
   margin: 0 auto;
+
 }
 
 .intro__container {
@@ -14,7 +15,7 @@
 }
 
 .intro__wrapper {
-  position: relative;
+  //position: relative;
 }
 
 .intro__description {
@@ -54,7 +55,6 @@
   color: $mainback-color;
   text-decoration: $notunderline;
   margin: 0 auto;
-  position: absolute;
   top: 430px;
   left: 20px;
 }
@@ -90,8 +90,8 @@
   .intro__button {
     width: 245px;
     position: absolute;
-    left: 120px;
-    top: 130px;
+    left: 150px;
+    top: 250px;
   }
 
   .intro__image {
