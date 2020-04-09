@@ -23,20 +23,18 @@
 
 .page-header--background {
   position: relative;
-}
 
-.page-header--background {
-  &::after {
-    content: "";
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    width: 320px;
-    height: 305px;
-    position: absolute;
-    top: 290px;
-    z-index: -1;
-  }
+    &::after {
+      content: "";
+      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-position: top;
+      background-repeat: no-repeat;
+      width: 320px;
+      height: 305px;
+      position: absolute;
+      top: 290px;
+      z-index: -1;
+    }
 }
 
 @media (min-width: $tablet-width) {
@@ -83,6 +81,10 @@
   .page-header {
     width: 1300px;
     margin: 0 auto;
+    padding-top: 53px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 321px;
   }
 
   .page-header__container {
@@ -101,7 +103,8 @@
       width: 720px;
       height: 696px;
       top: 0;
-      right: 0;
+      right: -71px;
+      display: block;
     }
   }
 }
