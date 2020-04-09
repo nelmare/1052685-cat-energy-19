@@ -20,6 +20,7 @@
   padding-right: 20px;
   border-bottom: 1px solid rgb(217, 217, 217);
 }
+
 .page-header--background {
   position: relative;
 }
@@ -37,7 +38,6 @@
     z-index: -1;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .page-header {
@@ -64,6 +64,7 @@
 
   .page-header__wrapper {
     padding: 0;
+    border: none;
   }
 
   .page-header__toggle {
