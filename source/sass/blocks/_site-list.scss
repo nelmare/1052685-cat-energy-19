@@ -8,9 +8,11 @@
   padding-top: 23px;
   padding-bottom: 22px;
   border-bottom: 1px solid rgb(217, 217, 217);
+
   &:hover a {
     opacity: 0.6;
   }
+
   &:active a {
     opacity: 0.3;
   }

@@ -12,6 +12,7 @@
   text-decoration: $notunderline;
   text-transform: none;
 }
+
 .copyright__logo-image {
   &:hover svg {
     path,
@@ -19,6 +20,7 @@
       fill: $button-color;
     }
   }
+
   &:active svg {
     path,
     circle {

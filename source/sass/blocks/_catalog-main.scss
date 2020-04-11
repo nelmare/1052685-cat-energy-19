@@ -1,5 +1,5 @@
 .catalog-main {
-  padding-top: 32px;
+  padding-top: 31px;
   width: 320px;
   margin: 0 auto;
   //padding-left: 20px;
@@ -9,7 +9,7 @@
 
 .catalog-main__title {
   @include margin-reset;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
@@ -29,10 +29,14 @@
     margin: 0;
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 57px;
   }
 
   .catalog-main__title {
     padding: 0;
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 165px;
   }
 
   .catalog-main__container {

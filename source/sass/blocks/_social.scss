@@ -23,21 +23,23 @@
   &:last-of-type {
     margin-right: 0;
   }
+}
 
-  .social__link {
-    width: 50px;
-    height: 50px;
-    &:hover svg {
-      path,
-      circle {
-        fill: $button-color;
-      }
+.social__link {
+  width: 50px;
+  height: 50px;
+
+  &:hover svg {
+    path,
+    circle {
+      fill: $button-color;
     }
-    &:active svg {
-      path,
-      circle {
-        fill: rgba(104, 183, 56, 0.3);
-      }
+  }
+
+  &:active svg {
+    path,
+    circle {
+      fill: rgba(104, 183, 56, 0.3);
     }
   }
 }
