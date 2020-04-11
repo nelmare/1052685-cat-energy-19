@@ -8,6 +8,12 @@
   margin-top: -2px;
 }
 
+.advantages__container {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .advantages__title {
   @include margin-reset;
   font-size: 36px;
@@ -30,6 +36,74 @@
   margin-bottom: 26px;
   line-height: 18px;
   text-transform: none;
+}
+
+.advantages__item--usefulness {
+  position: relative;
+
+  &::before {
+    content: "";
+    top: -2px;
+    left: 0;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/advantage-leaf@1x.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: $button-color;
+  }
+}
+
+.advantages__item--powder {
+  position: relative;
+
+  &::before {
+    content: "";
+    top: -2px;
+    left: 0;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/advantage-powder@1x.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: $button-color;
+  }
+}
+
+.advantages__item--eating {
+  position: relative;
+
+  &::before {
+    content: "";
+    top: -2px;
+    left: 0;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/advantage-dining@1x.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: $button-color;
+  }
+}
+
+.advantages__item--change {
+  position: relative;
+
+  &::before {
+    content: "";
+    top: -2px;
+    left: 0;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/advantage-clock@1x.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: $button-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -200,9 +274,21 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 27px;
+    padding-bottom: 94px;
+  }
+
   .advantages__container {
     width: 1220px;
     margin: 0 auto;
+  }
+
+  .advantages__title {
+    @include margin-reset;
+    margin-bottom: 183px;
   }
 
   .advantages__list {
@@ -217,5 +303,59 @@
     @include margin-reset;
     width: 244px;
     margin-bottom: 117px;
+  }
+
+  .advantages__item--usefulness {
+    &::before {
+      content: "";
+      top: -112px;
+      left: 2px;
+    }
+
+    &::after {
+      content: "1";
+      top: -152px;
+      right: 54px;
+    }
+  }
+
+  .advantages__item--powder {
+    &::before {
+      content: "";
+      top: -112px;
+      left: 2px;
+    }
+
+    &::after {
+      content: "2";
+      top: -152px;
+      right: 60px;
+    }
+  }
+
+  .advantages__item--eating {
+    &::before {
+      content: "";
+      top: -112px;
+    }
+
+    &::after {
+      content: "3";
+      top: -152px;
+      right: 60px;
+    }
+  }
+
+  .advantages__item--change {
+    &::before {
+      content: "";
+      top: -112px;
+    }
+
+    &::after {
+      content: "4";
+      top: -152px;
+      right: 60px;
+    }
   }
 }

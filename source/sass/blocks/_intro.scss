@@ -5,12 +5,14 @@
   //background-repeat: no-repeat;
   padding-right: 20px;
   padding-left: 20px;
-  width: 320px;
-  margin: 0 auto;
+  //width: 320px;
+  margin: 0 -20px;
 }
 
 .intro__container {
   width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro__wrapper {
@@ -75,10 +77,13 @@
 @media (min-width: $tablet-width) {
   .intro {
     background-image: none;
-    width: auto;
-    margin: 0;
+    //width: auto;
+    margin: 0 auto;
     padding-top: 57px;
     padding-left: 88px;
+    margin-bottom: 308px;
+    width: 709px;
+    box-sizing: border-box;
   }
 
   .intro__container {
@@ -129,6 +134,8 @@
   .intro {
     padding-top: 106px;
     padding-left: 83px;
+    margin: 0;
+    margin-bottom: 321px;
   }
 
   .intro__container {
