@@ -2,6 +2,8 @@
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
+  position: relative;
+  //z-index: 2;
 }
 
 .contacts--form {
@@ -16,7 +18,13 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 31px 25px 26px 19px;
+  padding: 27px 25px 26px 19px;
+  position: absolute;
+  top: -76px;
+  width: 320px;
+  z-index: 2;
+  background-color: $addback-color;
+  box-sizing: border-box;
 }
 
 .contacts__invite {
@@ -29,31 +37,103 @@
   @include margin-reset;
   text-transform: none;
   width: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts__map-wrapper {
+  position: relative;
+  //margin-top: -20px;
+  //z-index: -2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 53px;
+    background-image: url("/img/map-pin-small.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 176px;
+    right: 40%;
+  }
 }
 
 .contacts__map {
   width: 100%;
+  background-color: $addback-color;
+  font-size: 0;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
     width: auto;
-    margin: 0;
+    margin: 0 -30px;
+  }
+
+  .contacts__container {
+    width: 768px;
+    margin: 0 auto;
   }
 
   .contacts__wrapper {
-    width: 631px;
+    width: 768px;
     margin: 0 auto;
+    padding: 62px 72px 59px 71px;
+    top: -185px;
+  }
+
+  .contacts__invite {
+    width: 123px;
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 3px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+    width: 155px;
+    text-align: right;
+  }
+
+  .contacts__map-wrapper {
+    &::before {
+      content: "";
+      width: 113px;
+      height: 106px;
+      background-image: url("/img/map-pin.png");
+      top: 161px;
+      right: 43%;
+    }
+  }
+
+  .contacts__map {
+    width: 100%;
+    background-color: $addback-color;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     width: 570px;
-    margin-bottom: -205px;
-    right: 200px;
-    background-color: $addback-color;
-    position: relative;
-    z-index: 2;
+    right: 680px;
+    top: 95px;
+    background-color: $mainback-color;
+    padding: 62px 90px 59px 76px;
+  }
+
+  .contacts__address {
+    text-align: left;
+  }
+
+  .contacts__map-wrapper {
+    &::before {
+      content: "";
+      top: -27px;
+      right: 19%;
+    }
   }
 }

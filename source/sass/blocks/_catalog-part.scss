@@ -1,10 +1,11 @@
 .catalog-part {
-  padding-top: 31px;
+  padding-top: 28px;
   padding-left: 20px;
   padding-right: 20px;
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
+  margin-bottom: 111px;
 }
 
 .catalog-part__container {
@@ -14,7 +15,7 @@
 
 .catalog-part__title {
   @include margin-reset;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -22,9 +23,14 @@
 }
 
 .catalog-part__item {
-  padding-top: 14px;
+  padding-top: 12px;
   padding-bottom: 17px;
   border-bottom: 1px solid rgb(217, 217, 217);
+  box-sizing: border-box;
+
+  &:first-of-type {
+    border-top: 1px solid rgb(217, 217, 217);
+  }
 }
 
 .catalog-part__item-title {
@@ -44,33 +50,186 @@
   text-transform: none;
 }
 
+.catalog-part__table {
+  text-align: right;
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    text-align: left;
+  }
+
+  td:last-child {
+    width: 95px;
+    text-align: right;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .catalog-part {
     width: auto;
     margin: 0;
     padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 262px;
   }
 
   .catalog-part__container {
     width: 708px;
-    margin: 0 auto;
+    margin: 0 -30px;
+  }
+
+  .catalog-part__back {
+    background-color: $mainback-color;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .catalog-part__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 30px;
+    position: relative;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: 80px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 768px;
+      height: 3px;
+      background: $button-color;
+      top: 22px;
+      left: 0;
+      z-index: -1;
+    }
   }
 
   .catalog-part__item {
-    padding: 28px 37px 28px 38px;
+    padding: 25px 37px 28px 38px;
     border: 1px solid rgb(217, 217, 217);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .catalog-part__container {
-    width: 1220px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
+  .catalog-part__item-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+
+  .catalog-part__wrapper {
+    font-size: 16px;
+    line-height: 20px;
+    width: 230px;
+    margin-top: 5px;
+  }
+
+  .catalog-part__table {
+    text-align: right;
+    width: 100%;
+    border-collapse: collapse;
+
+    td {
+      text-align: right;
+    }
+
+    td:last-child {
+      width: 95px;
+    }
+  }
+
+  .catalog-part__button {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-part {
+    margin-bottom: 86px;
+  }
+
+  .catalog-part__container {
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .catalog-part__back {
+    background-color: $mainback-color;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .catalog-part__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 30px;
+    position: relative;
+    margin-left: -70px;
+    margin-right: -40px;
+    margin-bottom: 80px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1220px;
+      height: 3px;
+      background: $button-color;
+      top: 22px;
+      left: 115px;
+      z-index: -1;
+    }
+  }
+
   .catalog-part__items {
     width: 895px;
+  }
+
+  .catalog-part__item {
+    border-left: none;
+    border-right: none;
+    width: 895px;
+    padding: 15px 0 16px 0;
+  }
+
+  .catalog-part__item-title {
+    margin-bottom: 0;
+    width: 245px;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .catalog-part__wrapper {
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 10px;
+  }
+
+  .catalog-part__table {
+    width: 285px;
+
+    td {
+      text-align: left;
+    }
+
+    td:last-child {
+      width: 55px;
+      text-align: right;
+    }
+  }
+
+  .catalog-part__button {
+    width: 245px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
   }
 }

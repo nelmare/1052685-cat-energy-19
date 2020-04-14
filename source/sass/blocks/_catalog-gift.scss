@@ -2,18 +2,31 @@
   @include margin-reset;
   width: 280px;
   min-height: 289px;
-  padding: 39px 20px 35px 20px;
+  padding: 188px 59px 43px 59px;
   background-image: url("/img/gift-photo-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  margin-top: 39px;
+  margin-top: 38px;
+  //margin-bottom: 11px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 61px;
+    background-image: url("/img/icon-gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 66px;
+    right: 40%;
+  }
 }
 
 .catalog-gift__text {
   @include margin-reset;
   @include add-font;
-  padding-top: 190px;
   font-size: 16px;
   text-align: center;
   color: $mainback-color;
@@ -23,10 +36,27 @@
 @media (min-width: $tablet-width) {
   .catalog-gift {
     width: 708px;
-    background: $button-color;
+    background-color: $button-color;
     min-height: 200px;
     margin-top: 69px;
     margin-bottom: 35px;
+    background-image: url("/img/gift-photo-tablet@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 72px 123px 69px 424px;
+
+    &::before {
+      content: "";
+      top: 66px;
+      right: 91px;
+    }
+  }
+
+  .catalog-gift__text {
+    padding-top: 0;
+    font-size: 16px;
+    text-align: left;
   }
 }
 
@@ -35,5 +65,21 @@
     width: 245px;
     background: $button-color;
     min-height: 289px;
+    background-image: url("/img/gift-photo-desktop@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 190px 42px 43px 42px;
+    margin: 0;
+
+    &::before {
+      content: "";
+      top: 66px;
+      right: 91px;
+    }
+  }
+
+  .catalog-gift__text {
+    text-align: center;
   }
 }

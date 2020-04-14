@@ -65,8 +65,7 @@
   border: none;
 }
 
-//.page-header--closed
-.page-header__toggle::before {
+.main-nav--closed .page-header__toggle::before {
   content: "";
 
   position: absolute;
