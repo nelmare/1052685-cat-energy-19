@@ -7,6 +7,19 @@
   padding-left: 20px;
   width: 320px;
   margin: 0 -20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 305px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
 }
 
 .intro__container {
@@ -84,6 +97,10 @@
     margin-bottom: 308px;
     width: 709px;
     box-sizing: border-box;
+
+    &::after {
+      display: none;
+    }
   }
 
   .intro__container {

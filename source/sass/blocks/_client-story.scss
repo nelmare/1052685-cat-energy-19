@@ -15,7 +15,7 @@
 
 .client-story__title {
   @include margin-reset;
-  margin-bottom: 33px;
+  margin-bottom: 23px;
   font-size: 36px;
   line-height: 60px;
   text-transform: none;
@@ -28,6 +28,7 @@
   margin-bottom: 27px;
   line-height: 18px;
   text-transform: none;
+  padding-right: 5px;
 }
 
 .client-story__value {
@@ -35,18 +36,28 @@
   line-height: 24px;
   text-align: center;
   font-weight: 400;
+  padding: 13px 20px;
+  border: 1px solid rgb(205, 205, 205);
+  box-sizing: border-box;
 }
 
 .client-story__description {
   @include add-font;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   text-transform: lowercase;
+  width: 57px;
+  position: relative;
+  background-color: $addback-color;
+  padding: 0 13px;
+  margin-top: -8px;
+  margin-left: 20px;
 }
 
 .client-story__cost {
+  @include margin-reset;
   margin-bottom: 44px;
   font-size: 14px;
   text-align: center;
@@ -60,6 +71,7 @@
 
 .client-story__wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .client-story__switcher-wrapper {
@@ -67,6 +79,8 @@
   width: 320px;
   border: none;
 }
+
+
 
 @media (min-width: $tablet-width) {
   .client-story {
