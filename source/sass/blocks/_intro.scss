@@ -90,12 +90,12 @@
 @media (min-width: $tablet-width) {
   .intro {
     background-image: none;
-    //width: auto;
+    width: auto;
     margin: 0;
     padding-top: 57px;
     //padding-left: 88px;
     margin-bottom: 308px;
-    width: 709px;
+    //width: 709px;
     box-sizing: border-box;
 
     &::after {
@@ -105,12 +105,12 @@
 
   .intro__container {
     width: 709px;
-    margin: 0;
+    margin: 0 auto;
+    position: relative;
   }
 
   .intro__wrapper {
     width: 414px;
-    position: relative;
     padding-left: 69px;
   }
 
@@ -132,8 +132,8 @@
   .intro__button {
     width: 245px;
     position: absolute;
-    left: 119px;
-    top: 369px;
+    left: 70px;
+    top: 230px;
     font-size: 20px;
     line-height: 20px;
     padding-top: 17px;
@@ -159,6 +159,7 @@
   .intro__container {
     display: flex;
     width: 922px;
+    margin: 0;
   }
 
   .intro__wrapper {
@@ -197,7 +198,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-right: auto;
-    top: 455px;
-    left: 122px;
+    top: 235px;
+    left: -2px;
   }
 }
