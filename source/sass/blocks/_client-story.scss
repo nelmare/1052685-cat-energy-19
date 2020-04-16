@@ -4,6 +4,7 @@
   background-color: $addback-color;
   box-sizing: border-box;
   margin: 0 auto;
+  margin-bottom: 110px;
 }
 
 .client-story__container {
@@ -58,7 +59,7 @@
 
 .client-story__cost {
   @include margin-reset;
-  margin-bottom: 44px;
+  margin-bottom: 35px;
   font-size: 14px;
   text-align: center;
 }
@@ -80,13 +81,12 @@
   border: none;
 }
 
-
-
 @media (min-width: $tablet-width) {
   .client-story {
     width: auto;
     margin: 0;
     background: $mainback-color;
+    margin-bottom: 185px;
   }
 
   .client-story__container {
@@ -95,39 +95,118 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 56px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 231px;
+  }
+
+  .client-story__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 64px;
   }
 
   .client-story__text {
-    width: 674px;
+    width: 676px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 53px;
+  }
+
+  .client-story__wrapper {
+    width: 365px;
+  }
+
+  .client-story__item {
+    width: 162px;
+  }
+
+  .client-story__value {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 17px 20px;
+  }
+
+  .client-story__description {
+    @include add-font;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 8px;
+    margin-top: -10px;
+    margin-left: 0;
+    background-color: $mainback-color;
+  }
+
+  .client-story__description--slim {
+    width: 123px;
+    box-sizing: border-box;
+    margin-left: 23px;
+  }
+
+  .client-story__description--time {
+    width: 153px;
+    box-sizing: border-box;
+    margin-left: auto;
   }
 
   .client-story__switcher-wrapper {
     background: $addback-color;
     width: 100%;
   }
+
+  .client-story__cost {
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 178px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 10px;
+  }
+
+  .client-story__cost span {
+    margin-left: auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .client-story__title {
-    margin-top: -100px;
+    margin-top: -220px;
+    margin-bottom: 146px;
   }
 
   .client-story {
-    background-color: $addback-color;
+    padding-top: 87px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    background-image: linear-gradient(to right, transparent 70%, #eaeaea 30%);
   }
 
   .client-story__container {
     width: 1220px;
     display: inline-block;
+    padding: 0;
   }
 
   .client-story__text {
-    width: 430px;
+    width: 431px;
+    margin-bottom: 66px;
   }
 
   .client-story__cost {
     display: flex;
     width: 325px;
     justify-content: space-between;
+  }
+
+  .client-story__description {
+    background-color: $addback-color;
   }
 }

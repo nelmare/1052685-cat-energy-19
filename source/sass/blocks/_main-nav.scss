@@ -8,24 +8,23 @@
 }
 
 .main-nav__toggle {
-  //position: absolute;
+  position: absolute;
   top: -66px;
-  right: -250px;
+  right: 0;
   z-index: 2;
   display: block;
   width: 65px;
-  height: 65px;
   background-color: $mainback-color;
   cursor: pointer;
   border: none;
-  position: relative;
+  padding: 0 0;
+  height: 65px;
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav__toggle--open {
-    display: inline-block;
-    vertical-align: middle;
-  }
+  //.main-nav__toggle--open {
+  //  position: absolute;
+  //}
 
   .main-nav__toggle--open::before {
     content: "";
