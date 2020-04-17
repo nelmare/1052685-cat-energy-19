@@ -129,18 +129,22 @@
     <fieldset class="client-story__switcher-wrapper switcher">
       <div class="switcher__container">
         <div class="switcher__image-container">
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x">
-            <img class="switcher__image switcher__image--before" src="img/before-mobile@1x.png" width="311" height="232" alt="Фотография кота Бориса до участия в
+          <div class="switcher__wrapper switcher__wrapper--before">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x">
+              <img class="switcher__image switcher__image--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Фотография кота Бориса до участия в
+                   программе">
+            </picture>
+          </div>
+          <div class="switcher__wrapper switcher__wrapper--after">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x">
+              <img class="switcher__image switcher__image--after" src="img/after-mobile@1x.png" width="320" height="240" alt="Фотография кота Бориса до участия в
                  программе">
-          </picture>
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x">
-            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x">
-            <img class="switcher__image switcher__image--after" src="img/after-mobile@1x.png" width="311" height="232" alt="Фотография кота Бориса до участия в
-               программе">
-          </picture>
+            </picture>
+          </div>
         </div>
         <div class="switcher__slider-container">
           <button class="switcher__item switcher__item--before" type="button">Было</button>

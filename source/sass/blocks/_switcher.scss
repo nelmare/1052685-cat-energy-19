@@ -1,26 +1,50 @@
 .switcher__image-container {
-  margin-bottom: 37px;
+  margin-bottom: -60px;
+  position: relative;
+  height: 328px;
 }
 
-.switcher__image--before {
+.switcher__wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.switcher__wrapper--before {
+  width: 318px;
+  height: 240px;
   display: block;
-  position: relative;
   z-index: 2;
-  margin-left: auto;
-  margin-right: auto;
-  width: 311px;
-  height: 232px;
 }
 
-.switcher__image--after {
+.switcher__wrapper--after {
   display: none;
-  position: relative;
   z-index: 1;
+  width: 320px;
+  height: 240px;
 }
+//.switcher__image--before {
+//  margin-left: auto;
+//  margin-right: auto;
+//  width: 311px;
+//  height: 232px;
+//  position: absolute;
+//}
+//
+//.switcher__image--after {
+//  position: absolute;
+//  width: 320px;
+//  height: 240px;
+//  margin-left: auto;
+//  margin-right: auto;
+//}
 
 .switcher__slider-container {
-  width: 202px;
+  width: 214px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 //Шкала слайдера
 .switcher__scale {
@@ -28,18 +52,16 @@
   display: inline-block;
   width: 84px;
   height: 14px;
-  margin-right: auto;
-  margin-left: auto;
+  //margin-right: auto;
+  //margin-left: auto;
 }
 
-/* Hide default HTML checkbox */
 .switcher__scale input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .switcher__slider {
   position: absolute;
   cursor: pointer;
@@ -90,34 +112,53 @@ input:checked + .switcher__slider::before {
   }
 
   .switcher__image-container {
+    margin: 0 auto;
     margin-bottom: 32px;
-    width: 768px;
+    width: 708px;
+    height: 517px;
+    left: 50px;
   }
 
   .switcher__image--before {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    margin-left: auto;
-    margin-right: auto;
+    //display: inline-block;
+    //position: relative;
+    //z-index: 1;
+    //margin-left: auto;
+    //margin-right: auto;
     width: 100%;
     height: auto;
-    vertical-align: middle;
-    clip-path: inset(0 393px 0 0);
-    margin-top: -184px;
-    right: -9px;
+    //vertical-align: middle;
+    clip-path: inset(0 351px 0 0);
   }
 
   .switcher__image--after {
-    display: inline-block;
-    position: absolute;
-    z-index: 1;
-    vertical-align: middle;
+    //display: inline-block;
+    //position: absolute;
+    //z-index: 1;
+    //vertical-align: middle;
     width: 100%;
     height: auto;
-    clip-path: inset(0 0 0 379px);
-    margin-top: -571px;
-    left: 5px;
+    clip-path: inset(0 0 0 345px);
+  }
+
+  .switcher__wrapper {
+    top: -339px;
+  }
+
+  .switcher__wrapper--before {
+    width: 695px;
+    height: auto;
+    display: block;
+    z-index: 1;
+    left: -39px;
+  }
+
+  .switcher__wrapper--after {
+    display: block;
+    z-index: 1;
+    width: 695px;
+    height: auto;
+    right: 53px;
   }
 
   .switcher__item {
@@ -174,13 +215,13 @@ input:checked + .switcher__slider::before {
     transform: translateX(200px);
   }
 
-  .switcher__item--before {
-    margin-right: 12px;
-  }
-
-  .switcher__item--after {
-    margin-left: 7px;
-  }
+  //.switcher__item--before {
+  //  margin-right: 12px;
+  //}
+  //
+  //.switcher__item--after {
+  //  margin-left: 7px;
+  //}
 }
 
 @media (min-width: $desktop-width) {
