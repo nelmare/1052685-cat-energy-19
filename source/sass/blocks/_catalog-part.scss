@@ -67,8 +67,8 @@
 
 @media (min-width: $tablet-width) {
   .catalog-part {
-    width: auto;
-    margin: 0;
+    width: 708px;
+    margin: 0 auto;
     padding: 0;
     padding-left: 30px;
     padding-right: 30px;
@@ -109,7 +109,7 @@
 
   .catalog-part__item {
     padding: 25px 37px 28px 38px;
-    border: 1px solid rgb(217, 217, 217);
+    //border: 1px solid rgb(217, 217, 217);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -150,6 +150,7 @@
 @media (min-width: $desktop-width) {
   .catalog-part {
     margin-bottom: 86px;
+    width: 1220px;
   }
 
   .catalog-part__container {
