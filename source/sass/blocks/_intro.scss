@@ -52,9 +52,9 @@
   color: $mainback-color;
 }
 
-.intro__image {
+.intro__image-wrapper {
   width: 280px;
-  height: 270px;
+  height: auto;
   display: block;
   margin: 0 auto;
   margin-bottom: 4px;
@@ -143,9 +143,10 @@
     //margin-left: 90px;
   }
 
-  .intro__image {
+  .intro__image-wrapper {
     display: block;
     margin: 0 auto;
+    width: 709px;
   }
 }
 
@@ -171,11 +172,11 @@
     z-index: 2;
   }
 
-  .intro__image {
+  .intro__image-wrapper {
     display: inline;
     margin: 0;
     width: 552px;
-    height: 499px;
+    height: auto;
     position: absolute;
     left: 507px;
     top: 140px;
