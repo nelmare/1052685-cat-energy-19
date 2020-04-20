@@ -18,6 +18,10 @@
   }
 }
 
+.site-list__item--index {
+  border-top: 1px solid rgb(217, 217, 217);
+}
+
 .site-list__link {
   text-decoration: $notunderline;
   font-weight: 500;
@@ -33,6 +37,10 @@
 
   .site-list__item--active {
     border-bottom: 2px solid rgb(104, 183, 56);
+  }
+
+  .site-list__item--index {
+    border-top: none;
   }
 
   .site-list__link {

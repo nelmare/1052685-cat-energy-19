@@ -1,8 +1,5 @@
 .main-plan {
-  width: 320px;
   padding-top: 22px;
-  padding-right: 20px;
-  padding-left: 20px;
   margin: 0 auto;
 }
 
@@ -12,12 +9,13 @@
 //}
 
 .main-plan__list {
-  @include margin-reset;
+  padding-top: 0;
+  padding-bottom: 0;
   list-style: none;
 }
 
 .main-plan__item {
-  width: 280px;
+  //width: 280px;
   padding-top: 31px;
   padding-bottom: 20px;
   padding-left: 20px;
