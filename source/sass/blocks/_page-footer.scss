@@ -2,7 +2,7 @@
   width: 320px;
   margin: 0 auto;
   background-color: $addback-color;
-  padding-top: 39px;
+  padding-top: 36px;
   padding-bottom: 22px;
   padding-left: 20px;
   padding-right: 20px;
@@ -12,6 +12,16 @@
 .page-footer__container {
   width: 280px;
   box-sizing: border-box;
+}
+
+.page-footer__logo {
+  &:hover img {
+    opacity: 0.8;
+  }
+
+  &:active img {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__logo-image {
@@ -31,6 +41,10 @@
   .page-footer {
     width: auto;
     margin: 0;
+    padding-left: 31px;
+    padding-right: 30px;
+    padding-top: 64px;
+    padding-bottom: 62px;
   }
 
   .page-footer__container {

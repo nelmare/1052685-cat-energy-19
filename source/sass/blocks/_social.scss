@@ -1,9 +1,63 @@
 .social {
   margin-top: 26px;
   margin-bottom: 24px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social__list {
   @include margin-reset;
   list-style: none;
+  display: flex;
+  min-height: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__item {
+  margin-right: 36px;
+  margin-bottom: 5px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  width: 50px;
+  height: 50px;
+
+  &:hover svg {
+    path,
+    circle {
+      fill: $button-color;
+    }
+  }
+
+  &:active svg {
+    path,
+    circle {
+      fill: rgba(104, 183, 56, 0.3);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -3px;
+  }
+
+  .social__list {
+    margin-left: 14px;
+    text-align: center;
+  }
+
+  .social__item {
+    margin-right: 28px;
+  }
 }

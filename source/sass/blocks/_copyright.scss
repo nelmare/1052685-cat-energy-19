@@ -1,5 +1,8 @@
 .copyright {
-  margin-top: 22px;
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__link {
@@ -8,4 +11,27 @@
   line-height: 16px;
   text-decoration: $notunderline;
   text-transform: none;
+}
+
+.copyright__logo-image {
+  &:hover svg {
+    path,
+    circle {
+      fill: $button-color;
+    }
+  }
+
+  &:active svg {
+    path,
+    circle {
+      fill: rgba(104, 183, 56, 0.3);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin-top: -12px;
+    width: 162px;
+  }
 }
