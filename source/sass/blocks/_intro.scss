@@ -95,7 +95,6 @@
     margin: 0;
     padding-top: 57px;
     //padding-left: 88px;
-    margin-bottom: 308px;
     //width: 709px;
     box-sizing: border-box;
 
@@ -105,14 +104,13 @@
   }
 
   .intro__container {
-    width: 709px;
-    margin: 0 auto;
+    //width: 709px;
     position: relative;
   }
 
   .intro__wrapper {
-    width: 414px;
-    padding-left: 69px;
+    //width: 414px;
+    padding-left: 89px;
   }
 
   .intro__description {
@@ -120,7 +118,9 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
+    margin: 0;
     margin-bottom: 41px;
+    max-width: 415px;
   }
 
   .intro__slogan {

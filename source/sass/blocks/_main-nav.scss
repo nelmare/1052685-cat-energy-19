@@ -69,7 +69,6 @@
   }
 
   .main-nav__list {
-    width: 440px;
     display: flex;
     justify-content: space-between;
   }
@@ -81,10 +80,6 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 480px;
-  }
-
-  .main-nav__list {
     width: 480px;
   }
 }

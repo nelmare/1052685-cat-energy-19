@@ -32,17 +32,12 @@
   .page-footer {
     width: auto;
     margin: 0;
-    padding-left: 31px;
-    padding-right: 30px;
+    //padding-left: 31px;
+    //padding-right: 30px;
     padding-top: 64px;
     padding-bottom: 62px;
-  }
-
-  .page-footer__container {
-    width: 708px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
   }
 
   .page-footer__logo-image {
@@ -58,12 +53,5 @@
     width: 162px;
     display: inline-block;
     vertical-align: baseline;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer__container {
-    width: 1220px;
-    box-sizing: border-box;
   }
 }

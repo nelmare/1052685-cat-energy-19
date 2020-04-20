@@ -8,6 +8,7 @@
   padding-top: 23px;
   padding-bottom: 22px;
   border-bottom: 1px solid rgb(217, 217, 217);
+  margin: 0 -20px;
 
   &:hover a {
     opacity: 0.6;
@@ -18,8 +19,12 @@
   }
 }
 
-.site-list__item--index {
+.site-list__item:first-child {
   border-top: 1px solid rgb(217, 217, 217);
+}
+
+.site-list__item:last-child {
+  border-bottom: none;
 }
 
 .site-list__link {
@@ -33,6 +38,10 @@
     padding-top: 20px;
     padding-bottom: 7px;
     border: none;
+  }
+
+  .site-list__item:first-child {
+    border-top: none;
   }
 
   .site-list__item--active {
@@ -53,10 +62,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-list {
-    width: 440px;
-  }
-
   .site-list__item {
     padding-top: 20px;
     padding-bottom: 7px;
@@ -78,10 +83,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .site-list {
-    width: 480px;
-  }
-
   .site-list__link {
     font-size: 20px;
     line-height: 25px;

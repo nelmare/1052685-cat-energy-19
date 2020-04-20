@@ -1,3 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+
 body {
   @include margin-reset;
   min-width: 320px;
@@ -36,4 +47,16 @@ input[type="radio"].visually-hidden {
   padding: 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    padding: 0 40px;
+  }
 }

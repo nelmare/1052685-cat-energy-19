@@ -1,12 +1,10 @@
 .catalog-item {
   //padding-top: 15px;
   padding-bottom: 24px;
-  width: 320px;
   border: 1px solid rgb(217, 217, 217);
   border-top: none;
   padding-left: 20px;
   padding-right: 20px;
-  box-sizing: border-box;
 }
 
 .catalog-item:first-of-type {
@@ -14,13 +12,15 @@
 }
 
 .catalog-item__wrapper {
-  margin-bottom: -3px;
+  //margin-bottom: -3px;
   display: flex;
+  justify-content: space-around;
 }
 
 .catalog-item__picture-container {
   width: 140px;
   height: 144px;
+  flex-shrink: 0;
 }
 
 .catalog-item__info-container {
@@ -55,9 +55,7 @@
 }
 
 .catalog-item__button {
-  width: 280px;
-  display: inline-block;
-  box-sizing: border-box;
+  display: block;
 }
 
 .catalog-item--add {
@@ -72,7 +70,8 @@
   &::before {
     content: "";
     top: 26px;
-    left: 144px;
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
     width: 31px;
     height: 31px;
@@ -107,8 +106,6 @@
   color: $text-color;
   background-color: $addback-color;
   padding: 12px 15px 11px 15px;
-  width: 280px;
-  box-sizing: border-box;
   display: block;
   margin-right: auto;
   margin-bottom: auto;
@@ -125,9 +122,8 @@
 
 @media (min-width: $tablet-width) {
   .catalog-item {
-    width: 324px;
+    max-width: 324px;
     padding: 15px 37px 40px 38px;
-    box-sizing: border-box;
     border: none;
     background: $addback-color;
     margin-top: 111px;
@@ -196,7 +192,7 @@
   }
 
   .catalog-item__button {
-    width: 249px;
+    //width: 249px;
   }
 
   .catalog-item--add {
@@ -213,7 +209,6 @@
     &::before {
       content: "";
       top: 53px;
-      left: 132px;
       width: 61px;
       height: 61px;
       background-image: url("../img/icon-plus.svg");
