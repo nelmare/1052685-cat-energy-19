@@ -90,7 +90,7 @@
   box-shadow: 0 0 2px 0 rgba(205, 205, 205, 1);
   border-radius: 50%;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: top center;
   background-size: 12px 12px;
   background-color: $mainback-color;
   display: inline-block;
@@ -167,44 +167,59 @@
   text-transform: none;
 }
 
+.form__back {
+  max-width: 205px;
+  padding-right: 22px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: $mainback-color;
+  z-index: 1;
+}
+
 .form__block-legend--contacts {
   padding-top: 28px;
   position: relative;
+  width: 100%;
 
   &::after {
     content: "";
-    width: 99px;
+    width: calc(100% + 20px);
     height: 3px;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-color: $button-color;
     position: absolute;
     top: 42px;
-    left: 201px;
+    left: 0;
   }
 }
 
 .form__line--email {
-  width: 217px;
+  //width: 217px;
 }
 
 .form__line--phone {
-  width: 200px;
+  //width: 200px;
 }
 
-.form__block--contacts {
+.form__group div {
   position: relative;
+  display: flex;
+  flex-grow: 1;
 }
 
 .form__icon--mail {
   position: absolute;
-  top: 126px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 15px;
 }
 
 .form__icon--phone {
   position: absolute;
-  top: 182px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 12px;
 }
 
@@ -218,26 +233,26 @@
 
 .form__textarea {
   border: solid 1px rgb(205, 205, 205);
-  width: 280px;
+  width: 100%;
   height: 150px;
-  box-sizing: border-box;
   padding: 13px;
 }
 
 .form__block-legend--comments {
   padding-top: 16px;
   position: relative;
+  width: 100%;
 
   &::after {
     content: "";
-    width: 158px;
+    width: calc(100% + 20px);
     height: 3px;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-color: $button-color;
     position: absolute;
     top: 30px;
-    left: 142px;
+    left: 0;
   }
 }
 
@@ -245,17 +260,18 @@
   padding-top: 27px;
   position: relative;
   margin-bottom: 38px;
+  width: 100%;
 
   &::after {
     content: "";
-    width: 136px;
+    width: calc(100% + 20px);
     height: 3px;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-color: $button-color;
     position: absolute;
     top: 40px;
-    left: 164px;
+    left: 0;
   }
 }
 
@@ -326,8 +342,13 @@
   padding-bottom: 18px;
 }
 
+.form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__button {
-  width: 280px;
+  display: block;
   margin-bottom: 21px;
 }
 
