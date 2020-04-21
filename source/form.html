@@ -63,22 +63,27 @@
       </div>
     </header>
 
-    <main class="form-main">
-      <div class="form-main__container">
+    <main class="form-main container">
+      <div class="form-main__title-wrapper">
         <h1 class="form-main__title">Подбор программы</h1>
+      </div>
 
         <p class="form-main__legend">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__wrapper">
             <fieldset class="form__block form__block--cat">
-              <label class="form__line-name form__label" for="name-line">Имя:<sup>*</sup></label>
-              <input class="form__line form__placeholder form__line--catname" type="text" name="name" id="name-line" placeholder="Барсик">
-
-              <label class="form__line-name form__label" for="weight-line">Вес (кг):<sup>*</sup></label>
-              <input class="form__line form__placeholder form__line--weight" type="number" name="name" id="weight-line" placeholder="7">
-
-              <label class="form__line-name form__label" for="age-line">Возраст (лет):</label>
-              <input class="form__line form__placeholder form__line--age" type="number" name="name" id="age-line" placeholder="7">
+              <div class="form__group">
+                <label class="form__line-name form__label" for="name-line">Имя:<sup>*</sup></label>
+                <input class="form__line form__placeholder form__line--catname" type="text" name="name" id="name-line" placeholder="Барсик">
+              </div>
+              <div class="form__group">
+                <label class="form__line-name form__label" for="weight-line">Вес (кг):<sup>*</sup></label>
+                <input class="form__line form__placeholder form__line--weight" type="number" name="name" id="weight-line" placeholder="7">
+              </div>
+              <div class="form__group">
+                <label class="form__line-name form__label" for="age-line">Возраст (лет):</label>
+                <input class="form__line form__placeholder form__line--age" type="number" name="name" id="age-line" placeholder="7">
+              </div>
             </fieldset>
 
             <fieldset class="form__block form__block--radio">
@@ -168,7 +173,6 @@
             <p class="form__name-legend"><sup>*</sup> — Обязательные поля</p>
           </div>
         </form>
-      </div>
 
       <section class="contacts contacts--form">
         <div class="contacts__container">

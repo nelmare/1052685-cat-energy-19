@@ -9,6 +9,15 @@
   //box-sizing: border-box;
 }
 
+.catalog-part__back {
+  background-color: $mainback-color;
+  padding-right: 24px;
+  max-width: 255px;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+}
+
 .catalog-part__title {
   @include margin-reset;
   margin-bottom: 34px;
@@ -16,6 +25,19 @@
   line-height: 24px;
   font-weight: 400;
   text-transform: none;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 20px);
+    height: 3px;
+    background: $button-color;
+    top: 50%;
+    transform: translateX(-50%);
+    //z-index: -1;
+  }
 }
 
 .catalog-part__item {

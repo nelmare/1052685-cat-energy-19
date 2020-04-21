@@ -10,6 +10,7 @@
 
 .catalog-main__title-wrapper {
   margin-bottom: 29px;
+  max-width: 480px;
 }
 
 .catalog-main__title {
@@ -27,14 +28,18 @@
     padding-top: 57px;
   }
 
+  .catalog-main__title-wrapper {
+    max-width: 900px;
+  }
+
   .catalog-main__title {
     padding: 0;
     font-size: 60px;
     font-weight: 400;
+    margin: 0 auto;
     margin-bottom: 55px;
     //padding-left: 30px;
     //padding-right: 30px;
-    width: 708px;
   }
 
   .catalog-main__container {
