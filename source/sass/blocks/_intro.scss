@@ -132,20 +132,20 @@
 
   .intro__button {
     width: 245px;
-    left: 70px;
-    top: 230px;
     font-size: 20px;
     line-height: 20px;
     padding-top: 17px;
     //padding-right: 29px;
     padding-bottom: 15px;
-    //margin-left: 90px;
+    margin: 0;
+    margin-left: 90px;
   }
 
   .intro__image-wrapper {
     display: block;
     margin: 0 auto;
     width: 709px;
+    order: 1;
   }
 }
 
