@@ -95,7 +95,6 @@
     padding-top: 57px;
     //padding-left: 88px;
     //width: 709px;
-    box-sizing: border-box;
 
     &::after {
       display: none;
@@ -105,6 +104,8 @@
   .intro__container {
     //width: 709px;
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .intro__wrapper {
@@ -131,7 +132,6 @@
 
   .intro__button {
     width: 245px;
-    position: absolute;
     left: 70px;
     top: 230px;
     font-size: 20px;
