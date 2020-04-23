@@ -246,22 +246,27 @@
 
 @media (min-width: $desktop-width) {
   .catalog-item {
-    width: 245px;
+    max-width: 245px;
     padding: 15px 37px 40px 38px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 33px;
   }
 
   .catalog-item__picture-container {
-    //width: 161px;
-    //height: 172px;
-    margin-bottom: 12px;
+    margin-bottom: 64px;
+  }
+
+  .catalog-item__picture-container--big {
+    margin-bottom: 100px;
   }
 
   .catalog-item__button {
-    width: 169px;
+    //width: 169px;
   }
 
   .catalog-item__title {
-    width: 134px;
+    //width: 134px;
   }
 
   .catalog-item__info-container {
@@ -270,14 +275,13 @@
   }
 
   .catalog-item--add {
-    padding-top: 164px;
+    padding-top: 162px;
     padding-bottom: 37px;
     padding-left: 38px;
     padding-right: 40px;
 
     &::before {
       top: 53px;
-      left: 92px;
     }
   }
 

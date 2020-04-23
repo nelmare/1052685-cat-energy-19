@@ -67,13 +67,14 @@
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box;
-    padding: 190px 42px 43px 42px;
+    padding: 189px 42px 41px 42px;
     margin: 0;
 
     &::before {
       content: "";
       top: 66px;
-      right: 91px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 

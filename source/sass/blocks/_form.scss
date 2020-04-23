@@ -489,7 +489,7 @@
   }
 
   .form__block--contacts {
-    position: relative;
+    //position: relative;
   }
 
   .form__line--email {
@@ -651,6 +651,15 @@
     margin: 0;
   }
 
+  .form__radio + label::before,
+  .form__radio:checked + label::before {
+    margin-right: 21px;
+  }
+
+  .form__list--radio {
+    padding-top: 27px;
+  }
+
   .form__block--cat {
     width: 47%;
     padding-bottom: 0;
@@ -672,7 +681,7 @@
       content: "";
       width: 108vw;
       top: 92px;
-      left: -111px;
+      left: -100px;
     }
   }
 
@@ -713,8 +722,12 @@
   }
 
   .form__block-legend--comments {
+    padding-top: 62px;
+
     &::after {
-      width: calc(100% + 40px);
+      width: 108vw;
+      left: -100px;
+      top: 90px;
     }
   }
 
@@ -726,9 +739,9 @@
   .form__block-legend--add {
     &::after {
       content: "";
-      width: calc(100% + 40px);
-      top: 83px;
-      left: 0;
+      width: 108vw;
+      top: 85px;
+      left: -100px;
     }
   }
 
@@ -741,7 +754,7 @@
   }
 
   .form__button {
-    //width: 568px;
+    width: 568px;
     margin-right: 84px;
   }
 

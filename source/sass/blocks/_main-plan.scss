@@ -148,7 +148,7 @@
 
   .main-plan__container {
     //width: 708px;
-    margin: 0 auto;
+    //margin: 0 auto;
   }
 
   .main-plan__item {
@@ -286,15 +286,14 @@
     padding-right: 55px;
     padding-left: 53px;
     padding-bottom: 62px;
+    max-width: 570px;
 
     &::before {
-      content: "";
       top: 48px;
-      right: 60px;
-      position: absolute;
+      right: 0;
       width: 100px;
       height: 100px;
-      left: auto;
+      left: 54px;
     }
   }
 

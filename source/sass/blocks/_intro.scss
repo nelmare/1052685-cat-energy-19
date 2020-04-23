@@ -160,10 +160,10 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    padding-top: 106px;
+    padding-top: 109px;
     padding-left: 83px;
     margin: 0;
-    margin-bottom: 321px;
+    margin-bottom: 268px;
   }
 
   .intro__container {
@@ -186,8 +186,8 @@
     width: 552px;
     height: auto;
     position: absolute;
-    left: 507px;
-    top: 140px;
+    left: 409px;
+    top: -81px;
   }
 
   .intro__description {
@@ -201,6 +201,7 @@
     text-align: left;
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 54px;
   }
 
   .intro__button {
@@ -208,7 +209,8 @@
     font-size: 20px;
     line-height: 20px;
     margin-right: auto;
-    top: 235px;
-    left: -2px;
+    //top: 235px;
+    //left: -2px;
+    margin-left: 0;
   }
 }

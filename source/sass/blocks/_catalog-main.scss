@@ -54,17 +54,22 @@
 
 @media (min-width: $desktop-width) {
   .catalog-main {
-    padding-top: 73px;
+    padding-top: 76px;
   }
 
   .catalog-main__container {
-    //width: 1220px;
-    margin-bottom: 46px;
+    max-width: none;
+    margin-bottom: 14px;
+  }
+
+  .catalog-main__title-wrapper {
+    max-width: none;
+    //padding: 0;
   }
 
   .catalog-main__title {
     //padding-left: 40px;
     //padding-right: 40px;
-    //width: 1220px;
+    //max-width: 1220px;
   }
 }
