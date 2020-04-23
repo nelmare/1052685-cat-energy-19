@@ -676,22 +676,35 @@
     }
   }
 
+  .form__row {
+    display: flex;
+  }
+
   .form__column {
-    width: none;
+    //width: none;
   }
 
   .form-column--email {
-    width: 43%;
-    //margin-right: 78px;
+    //width: 43%;
+  }
+
+  .form__group--email {
+    margin-right: 78px;
+    margin-bottom: 0;
+  }
+
+  .form__group--email,
+  .form__group--phone {
+    width: 47%;
   }
 
   .form__icon--mail {
     position: absolute;
-    left: 533px;
+    left: 453px;
   }
 
   .form-column--phone {
-    width: 38%;
+    //width: 38%;
   }
 
   .form__icon--phone {
