@@ -1,17 +1,16 @@
 .contacts {
-  width: 320px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  //width: 320px;
+  //margin: 0 auto;
   //z-index: 2;
 }
 
 .contacts--form {
-  margin-right: -20px;
-  margin-left: -20px;
+  //margin-right: -20px;
+  //margin-left: -20px;
 }
 
 .contacts__container {
-  position: relative;
+  //position: relative;
 }
 
 .contacts-inner {
@@ -22,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   padding: 27px 25px 26px 19px;
-  position: absolute;
+  //position: absolute;
   top: -76px;
   width: 320px;
   z-index: 2;
@@ -79,21 +78,19 @@
 @media (min-width: $tablet-width) {
   .contacts {
     width: auto;
-    margin: 0 -30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    //margin: 0 -30px;
   }
 
   .contacts__container {
     width: 768px;
-    margin: 0 auto;
+    //margin: 0 auto;
   }
 
   .contacts__wrapper {
     width: 768px;
-    margin: 0 auto;
+    //margin: 0 auto;
     padding: 62px 72px 59px 71px;
-    top: -200px;
+    //top: -200px;
   }
 
   .contacts__invite {
@@ -131,7 +128,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts__container {
-    width: 1300px;
+    //width: 1300px;
   }
 
   .contacts__wrapper {

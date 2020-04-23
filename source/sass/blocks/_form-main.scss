@@ -25,7 +25,7 @@
 
 @media (min-width: $tablet-width) {
   .form-main {
-    padding-top: 57px;
+    padding-top: 60px;
     padding-bottom: 34px;
     width: auto;
     margin: 0;
@@ -39,14 +39,14 @@
   .form-main__legend {
     font-size: 20px;
     line-height: 30px;
-    //width: 323px;
+    max-width: 365px;
     padding-left: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-main {
-    padding-top: 72px;
+    padding-top: 75px;
     padding-bottom: 34px;
   }
 

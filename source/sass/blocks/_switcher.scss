@@ -84,6 +84,7 @@
     background-color: $button-color;
     transition: 0.4s;
     border-radius: 34px;
+    box-sizing: content-box;
   }
 }
 

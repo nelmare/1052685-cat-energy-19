@@ -162,7 +162,8 @@
     &::before {
       content: "";
       top: 92px;
-      left: 446px;
+      right: 61px;
+      left: auto;
       position: absolute;
       width: 200px;
       height: 200px;
@@ -185,7 +186,8 @@
     &::before {
       content: "";
       top: 4px;
-      left: 423px;
+      right: -192px;
+      left: auto;
       position: absolute;
       width: 141px;
       height: 194px;
@@ -202,7 +204,8 @@
     &::before {
       content: "";
       top: 59px;
-      left: 359px;
+      right: -287px;
+      left: auto;
       position: absolute;
       width: 268px;
       height: 113px;
@@ -287,10 +290,11 @@
     &::before {
       content: "";
       top: 48px;
-      left: 53px;
+      right: 60px;
       position: absolute;
       width: 100px;
       height: 100px;
+      left: auto;
     }
   }
 

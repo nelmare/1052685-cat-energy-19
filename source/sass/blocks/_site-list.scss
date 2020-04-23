@@ -23,9 +23,9 @@
   border-top: 1px solid rgb(217, 217, 217);
 }
 
-.site-list__item:last-child {
-  border-bottom: none;
-}
+//.site-list__item:last-child {
+//  border-bottom: none;
+//}
 
 .site-list__link {
   text-decoration: $notunderline;
@@ -38,13 +38,20 @@
     padding-top: 20px;
     padding-bottom: 7px;
     border: none;
+    margin: 0 18px;
+    border-bottom: 2px solid transparent;
   }
 
   .site-list__item:first-child {
     border-top: none;
   }
 
+  .site-list__item:last-child {
+    margin-right: 0;
+  }
+
   .site-list__item--active {
+    padding-bottom: 7px;
     border-bottom: 2px solid rgb(104, 183, 56);
   }
 
@@ -61,7 +68,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .site-list__item {
     padding-top: 20px;
     padding-bottom: 7px;

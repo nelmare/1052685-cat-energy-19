@@ -4,14 +4,14 @@
   //width: 320px;
   background-color: $addback-color;
   //box-sizing: border-box;
-  //margin: 0 auto;
-  margin-bottom: 77px;
+  margin: 0 auto;
+  //margin-bottom: 77px;
 }
 
 .client-story__section-container {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 280px;
+  //padding-left: 20px;
+  //padding-right: 20px;
+  //width: 280px;
   margin: 0 auto;
 }
 
@@ -20,8 +20,8 @@
   padding-top: 18px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-right: -20px;
-  margin-left: -20px;
+  //margin-right: -20px;
+  //margin-left: -20px;
 }
 
 .client-story__title {
@@ -49,7 +49,6 @@
   font-weight: 400;
   padding: 13px 20px;
   border: 1px solid rgb(205, 205, 205);
-  box-sizing: border-box;
 }
 
 .client-story__description {
@@ -87,11 +86,11 @@
 
 .client-story__switcher-wrapper {
   @include margin-reset;
-  width: 320px;
+  max-width: 320px;
   border: none;
-  margin-left: -20px;
-  margin-right: -20px;
-  padding-bottom: 34px;
+  //margin-left: -20px;
+  //margin-right: -20px;
+  //padding-bottom: 34px;
 }
 
 @media (min-width: $tablet-width) {
@@ -99,26 +98,26 @@
     //width: 100%;
     //margin: 0;
     background: $mainback-color;
-    margin-bottom: 168px;
+    //margin-bottom: 168px;
   }
 
   .client-story__section-container {
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 708px;
+    //padding-left: 30px;
+    //padding-right: 30px;
+    //width: 708px;
   }
 
   .client-story__container {
-    width: 708px;
-    margin: 0 -30px;
+    //width: 708px;
+    //margin: 0 -30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
     padding-top: 56px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 230px;
+    //padding-left: 30px;
+    //padding-right: 30px;
+    //margin-bottom: 230px;
   }
 
   .client-story__title {
@@ -174,7 +173,7 @@
 
   .client-story__switcher-wrapper {
     background: none;
-    width: 768px;
+    //width: 768px;
     margin: 0 auto;
   }
 
@@ -204,18 +203,18 @@
 
   .client-story__section-container {
     width: 1220px;
-    padding-left: 40px;
-    padding-right: 40px;
+    //padding-left: 40px;
+    //padding-right: 40px;
     display: flex;
     justify-content: space-between;
   }
 
   .client-story__container {
-    width: 1220px;
+    //width: 1220px;
     display: inline-block;
-    margin: 0 -40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    //margin: 0 -40px;
+    //padding-left: 40px;
+    //padding-right: 40px;
   }
 
   .client-story__title {
