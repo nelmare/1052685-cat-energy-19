@@ -1,8 +1,5 @@
 .main-plan {
-  width: 320px;
   padding-top: 22px;
-  padding-right: 20px;
-  padding-left: 20px;
   margin: 0 auto;
 }
 
@@ -12,12 +9,13 @@
 //}
 
 .main-plan__list {
-  @include margin-reset;
+  padding-top: 0;
+  padding-bottom: 0;
   list-style: none;
 }
 
 .main-plan__item {
-  width: 280px;
+  //width: 280px;
   padding-top: 31px;
   padding-bottom: 20px;
   padding-left: 20px;
@@ -25,7 +23,6 @@
   margin-bottom: 20px;
   background-color: $addback-color;
   position: relative;
-  box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
 
@@ -145,29 +142,28 @@
   .main-plan {
     width: auto;
     margin: 0;
-    padding-right: 30px;
-    padding-left: 30px;
     padding-bottom: 15px;
+    padding-top: 0;
   }
 
   .main-plan__container {
-    width: 708px;
-    margin: 0 auto;
+    //width: 708px;
+    //margin: 0 auto;
   }
 
   .main-plan__item {
-    width: 708px;
+    //width: 708px;
     padding-top: 76px;
     padding-right: 283px;
     padding-bottom: 60px;
     padding-left: 53px;
     margin-bottom: 30px;
-    box-sizing: border-box;
 
     &::before {
       content: "";
       top: 92px;
-      left: 446px;
+      right: 61px;
+      left: auto;
       position: absolute;
       width: 200px;
       height: 200px;
@@ -190,7 +186,8 @@
     &::before {
       content: "";
       top: 4px;
-      left: 423px;
+      right: -192px;
+      left: auto;
       position: absolute;
       width: 141px;
       height: 194px;
@@ -207,7 +204,8 @@
     &::before {
       content: "";
       top: 59px;
-      left: 359px;
+      right: -287px;
+      left: auto;
       position: absolute;
       width: 268px;
       height: 113px;
@@ -269,12 +267,12 @@
 
 @media (min-width: $desktop-width) {
   .main-plan {
-    padding-right: 40px;
-    padding-left: 40px;
+    //padding-right: 40px;
+    //padding-left: 40px;
   }
 
   .main-plan__container {
-    width: 1220px;
+    //width: 1220px;
   }
 
   .main-plan__list {
@@ -283,19 +281,18 @@
   }
 
   .main-plan__item {
-    width: 570px;
     padding-top: 77px;
     padding-right: 55px;
     padding-left: 53px;
     padding-bottom: 62px;
+    max-width: 570px;
 
     &::before {
-      content: "";
       top: 48px;
-      left: 53px;
-      position: absolute;
+      right: 0;
       width: 100px;
       height: 100px;
+      left: 54px;
     }
   }
 

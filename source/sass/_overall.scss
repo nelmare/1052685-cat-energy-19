@@ -1,3 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+
 body {
   @include margin-reset;
   min-width: 320px;
@@ -9,6 +20,7 @@ body {
   color: $title-color;
   text-transform: $uppercase;
   background-color: $mainback-color;
+  //background-color: #ff8282;
 }
 
 img {
@@ -29,4 +41,24 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    padding: 0 40px;
+    max-width: 1920px;
+  }
 }
