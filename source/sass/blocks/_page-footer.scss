@@ -1,6 +1,9 @@
 .page-footer {
-  margin: 0 auto;
   background-color: $addback-color;
+}
+
+.page-footer__container {
+  //margin: 0 auto;
   padding-top: 36px;
   padding-bottom: 22px;
 }
@@ -29,7 +32,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__container {
     width: auto;
     //margin: 0;
     //padding-left: 31px;

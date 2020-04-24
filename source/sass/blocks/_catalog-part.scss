@@ -167,7 +167,7 @@
     //max-width: 1220px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -176,6 +176,7 @@
     padding-left: 40px;
     padding-right: 40px;
     max-width: 419px;
+    margin-left: -40px;
   }
 
   .catalog-part__title {
@@ -183,7 +184,6 @@
     line-height: 36px;
     //padding-left: 30px;
     //position: relative;
-    margin-left: -40px;
     //margin-right: -40px;
     margin-bottom: 77px;
 
