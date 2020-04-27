@@ -1,7 +1,8 @@
 .switcher__image-container {
-  margin-bottom: -60px;
+  margin-bottom: 30px;
   position: relative;
-  height: 328px;
+  height: 240px;
+  width: 318px;
 }
 
 .switcher__wrapper {
@@ -11,17 +12,13 @@
 }
 
 .switcher__wrapper--before {
-  width: 318px;
-  height: 240px;
-  display: block;
-  z-index: 2;
+  width: 100%;
+  overflow: hidden;
 }
 
 .switcher__wrapper--after {
-  display: none;
-  z-index: 1;
-  width: 320px;
-  height: 240px;
+  width: 0;
+  overflow: hidden;
 }
 //.switcher__image--before {
 //  margin-left: auto;
@@ -41,7 +38,7 @@
 
 .switcher__slider-container {
   width: 214px;
-  margin: 0 auto;
+  //margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -107,21 +104,22 @@ input:checked + .switcher__slider::before {
 }
 
 @media (min-width: $tablet-width) {
-  .switcher__container {
-    background-color: #f2f2f2;
-    background-image: linear-gradient(to right, transparent 50%, #eaeaea 50%);
-    width: 768px;
-    padding-bottom: 68px;
-    margin-left: -30px;
-    margin-right: -30px;
-  }
+  //.switcher__container {
+  //  background-color: #f2f2f2;
+  //  background-image: linear-gradient(to top, transparent 50%, #eaeaea 50%);
+  //  //width: 768px;
+  //  padding-bottom: 68px;
+  //  //margin-left: -30px;
+  //  //margin-right: -30px;
+  //}
 
   .switcher__image-container {
-    margin: 0 auto;
-    //margin-bottom: 32px;
-    width: 708px;
-    height: 366px;
-    left: 50px;
+    //margin: 0 auto;
+    margin-bottom: 18px;
+    width: 690px;
+    height: 517px;
+    left: 7px;
+    //left: 50px;
   }
 
   .switcher__image--before {
@@ -130,10 +128,10 @@ input:checked + .switcher__slider::before {
     //z-index: 1;
     //margin-left: auto;
     //margin-right: auto;
-    width: 100%;
-    height: auto;
-    //vertical-align: middle;
-    clip-path: inset(0 351px 0 0);
+    //height: auto;
+    ////vertical-align: middle;
+    //clip-path: inset(0 351px 0 0);
+    //width: 50%;
   }
 
   .switcher__image--after {
@@ -141,29 +139,32 @@ input:checked + .switcher__slider::before {
     //position: absolute;
     //z-index: 1;
     //vertical-align: middle;
-    width: 100%;
-    height: auto;
-    clip-path: inset(0 0 0 339px);
+    //width: 50%;
+    ////height: auto;
+    //clip-path: inset(0 0 0 339px);
   }
 
   .switcher__wrapper {
-    top: -169px;
+    //top: -169px;
   }
 
   .switcher__wrapper--before {
-    width: 690px;
-    height: auto;
-    display: block;
-    z-index: 1;
-    left: -35px;
+    //width: 690px;
+    //height: auto;
+    //display: block;
+    //z-index: 1;
+    width: 49%;
+    display: flex;
+    //left: -35px;
   }
 
   .switcher__wrapper--after {
-    display: block;
-    z-index: 1;
-    width: 690px;
-    height: auto;
-    right: 53px;
+    width: 51%;
+    //height: auto;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    display: flex;
   }
 
   .switcher__item {
@@ -176,7 +177,7 @@ input:checked + .switcher__slider::before {
   }
 
   .switcher__slider-container {
-    width: 590px;
+    width: 585px;
     margin: 0 auto;
   }
 
@@ -230,46 +231,48 @@ input:checked + .switcher__slider::before {
 }
 
 @media (min-width: $desktop-width) {
-  .switcher__container {
-    width: 690px;
-    background: none;
-    margin-right: 0;
-    margin-left: 0;
-  }
+  //.switcher__container {
+  //  width: 690px;
+  //  background: none;
+  //  margin-right: 0;
+  //  margin-left: 0;
+  //}
 
   .switcher__image-container {
-    margin: 0 auto;
+    //margin: 0 auto;
     //margin-bottom: 32px;
-    width: 708px;
-    height: 277px;
-    left: 110px;
+    width: 690px;
+    height: 517px;
+    //left: 44px;
+    margin-bottom: 39px;
   }
 
   .switcher__wrapper {
-    top: -276px;
+    //top: -276px;
+    //margin: 0;
   }
 
   .switcher__wrapper--before {
-    width: 688px;
-    left: -69px;
+    width: 53%;
+    //left: -69px;
   }
 
   .switcher__wrapper--after {
-    width: 688px;
-    right: 88px;
+    width: 47%;
+    //right: 88px;
   }
 
-  .switcher__image--before {
-    clip-path: inset(0 300px 0 0);
-  }
-
-  .switcher__image--after {
-    clip-path: inset(0 0 0 363px);
-  }
+  //.switcher__image--before {
+  //  clip-path: inset(0 300px 0 0);
+  //}
+  //
+  //.switcher__image--after {
+  //  clip-path: inset(0 0 0 363px);
+  //}
 
   .switcher__slider-container {
     margin: 0;
     width: 585px;
-    margin-left: 112px;
+    margin-left: 57px;
   }
 }

@@ -57,8 +57,13 @@
   height: auto;
   display: block;
   margin: 0 auto;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   background-color: transparent;
+}
+
+.intro__image {
+  font-size: 0;
+  display: block;
 }
 
 .intro__button {
@@ -70,10 +75,10 @@
   color: $mainback-color;
   text-decoration: $notunderline;
   margin: 0 auto;
-  //padding-top: 14px;
+  padding-top: 11px;
   //padding-right: 74px;
   //padding-bottom: 11px;
-  //padding-left: 73px;
+  padding-bottom: 11px;
   text-align: center;
 
   &:hover {
@@ -161,7 +166,6 @@
 @media (min-width: $desktop-width) {
   .intro {
     padding-top: 109px;
-    padding-left: 83px;
     //margin: 0;
     margin-bottom: 268px;
   }
@@ -170,6 +174,7 @@
     display: flex;
     //width: 922px;
     //margin: 0;
+    padding-left: 121px;
   }
 
   .intro__wrapper {
@@ -186,7 +191,7 @@
     width: 552px;
     height: auto;
     position: absolute;
-    left: 409px;
+    left: 491px;
     top: -81px;
   }
 
