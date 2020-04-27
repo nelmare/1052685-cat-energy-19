@@ -1,7 +1,7 @@
 .advantages {
   //width: 320px;
   //margin: 0 auto;
-  margin-bottom: 45px;
+  margin-bottom: 42px;
   padding-top: 0;
   //padding-right: 20px;
   //padding-left: 20px;
@@ -20,7 +20,7 @@
   line-height: 60px;
   font-weight: 400;
   text-transform: none;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 }
 
 .advantages__list {
@@ -265,7 +265,7 @@
 @media (min-width: $desktop-width) {
   .advantages {
     padding-top: 27px;
-    padding-bottom: 144px;
+    padding-bottom: 0;
   }
 
   .advantages__container {
@@ -282,7 +282,7 @@
 
   .advantages__item {
     @include margin-reset;
-    margin-bottom: 117px;
+    margin-bottom: 55px;
   }
 
   .advantages__item--usefulness {

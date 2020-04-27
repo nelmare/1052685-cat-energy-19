@@ -1,5 +1,5 @@
 .form {
-  padding-bottom: 17px;
+  padding-bottom: 32px;
 }
 
 .form__block {
@@ -87,7 +87,7 @@
   width: 12px;
   height: 12px;
   border: 9px solid $mainback-color;
-  box-shadow: 0 0 0 2px rgba(205, 205, 205, 1);
+  box-shadow: 0 0 0 2px rgba(242, 242, 242, 1);
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: top center;
@@ -105,7 +105,7 @@
   width: 12px;
   height: 12px;
   border: 9px solid $mainback-color;
-  box-shadow: 0 0 0 2px rgba(205, 205, 205, 1);
+  box-shadow: 0 0 0 2px rgba(242, 242, 242, 1);
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -157,6 +157,14 @@
 .form__radio:active + label::before,
 .form__radio:checked:active + label::before {
   opacity: 0.3;
+}
+
+.form__radio:focus ~ label {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.form__radio:-moz-focusring ~ label {
+  outline: 2px dotted;
 }
 
 .form__block-legend {
@@ -213,6 +221,10 @@
   width: 100%;
 }
 
+.form__icon {
+  fill: #222222;
+}
+
 .form__icon--mail {
   position: absolute;
   top: 50%;
@@ -227,11 +239,11 @@
   right: 12px;
 }
 
-.form__line:focus + .form__icon path {
+.form__line:focus + .form__icon {
   fill: $button-color;
 }
 
-.form__line:invalid + .form__icon path {
+.form__line:invalid + .form__icon {
   fill: rgb(255, 130, 130);
 }
 
@@ -251,7 +263,7 @@
 }
 
 .form__block-legend--comments {
-  padding-top: 16px;
+  padding-top: 12px;
   position: relative;
   width: 100%;
 
@@ -269,7 +281,7 @@
 }
 
 .form__block-legend--add {
-  padding-top: 27px;
+  padding-top: 22px;
   position: relative;
   margin-bottom: 38px;
   width: 100%;
@@ -340,18 +352,26 @@
   opacity: 0.3;
 }
 
+.form__checkbox:focus ~ .form__check {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.form__checkbox:-moz-focusring ~ .form__check {
+  outline: 2px dotted;
+}
+
 .form__name-legend {
   @include margin-reset;
   @include add-font;
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
-  margin-bottom: 91px;
+  //margin-bottom: 91px;
   text-align: center;
 }
 
 .form__block--checkbox {
-  padding-bottom: 18px;
+  padding-bottom: 19px;
 }
 
 .form__button-wrapper {
@@ -591,7 +611,7 @@
 
   .form__button-wrapper {
     display: flex;
-    margin-bottom: 241px;
+    margin-bottom: 8px;
     align-items: center;
     flex-direction: row;
   }

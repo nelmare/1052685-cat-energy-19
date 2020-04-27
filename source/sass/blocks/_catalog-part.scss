@@ -1,5 +1,6 @@
 .catalog-part {
-  padding-top: 28px;
+  padding-top: 24px;
+  padding-bottom: 33px;
   max-width: 480px;
   //margin-bottom: 111px;
 }
@@ -35,8 +36,7 @@
     width: calc(100% + 20px);
     height: 3px;
     background: $button-color;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 18px;
     left: auto;
     //z-index: -1;
   }
@@ -88,6 +88,7 @@
 @media (min-width: $tablet-width) {
   .catalog-part {
     max-width: none;
+    padding-top: 28px;
     //margin: 0 auto;
     //margin-bottom: 262px;
   }
@@ -128,7 +129,7 @@
   .catalog-part__item-title {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   .catalog-part__wrapper {
@@ -159,7 +160,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog-part {
-    margin-bottom: 86px;
+    margin-bottom: 54px;
     padding-top: 22px;
   }
 

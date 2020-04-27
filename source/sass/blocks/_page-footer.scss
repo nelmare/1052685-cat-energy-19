@@ -4,7 +4,7 @@
 
 .page-footer__container {
   //margin: 0 auto;
-  padding-top: 36px;
+  padding-top: 38px;
   padding-bottom: 22px;
 }
 
@@ -37,10 +37,11 @@
     //margin: 0;
     //padding-left: 31px;
     //padding-right: 30px;
-    padding-top: 61px;
+    padding-top: 52px;
     padding-bottom: 62px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .page-footer__logo-image {
@@ -56,5 +57,11 @@
     width: 162px;
     display: inline-block;
     vertical-align: baseline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    padding-top: 50px;
   }
 }
