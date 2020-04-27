@@ -333,8 +333,8 @@
   box-sizing: border-box;
 }
 
-.form__checkbox:hover + .form__check {
-//.form__checkbox:focus + .form__check {
+.form__checkbox:hover + .form__check,
+.form__checkbox:focus + .form__check {
   border: 1px solid rgb(186, 186, 186);
 }
 
@@ -342,8 +342,8 @@
   border: 1px solid rgba(186, 186, 186, 0.3);
 }
 
-.form__checkbox:checked:hover + .form__check {
-//.form__checkbox:checked:focus + .form__check {
+.form__checkbox:checked:hover + .form__check,
+.form__checkbox:checked:focus + .form__check {
   border: 1px solid rgb(186, 186, 186);
 }
 
