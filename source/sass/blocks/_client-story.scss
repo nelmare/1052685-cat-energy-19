@@ -114,8 +114,8 @@
   .client-story {
     //width: 100%;
     //margin: 0;
-    background: #f2f2f2;
-    background-image: linear-gradient(to top, transparent 462px, $mainback-color 57%);
+    background-color: #f2f2f2;
+    background-image: linear-gradient(to top, transparent 462px, #ffffff 462px);
     //margin-bottom: 168px;
   }
 
@@ -251,6 +251,7 @@
   .client-story__container {
     //width: 1220px;
     display: inline-block;
+    vertical-align: middle;
     //margin: 0 -40px;
     //padding-left: 40px;
     //padding-right: 40px;

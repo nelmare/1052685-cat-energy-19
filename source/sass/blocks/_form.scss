@@ -382,6 +382,15 @@
 .form__button {
   display: block;
   margin-bottom: 21px;
+
+  &:hover {
+    background-color: rgb(94, 170, 47);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgb(94, 170, 47);
+  }
 }
 
 @media (min-width: $tablet-width) {

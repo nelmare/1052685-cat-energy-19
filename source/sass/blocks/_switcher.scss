@@ -47,6 +47,7 @@
 .switcher__scale {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 84px;
   height: 14px;
   //margin-right: auto;
@@ -218,7 +219,7 @@ input:checked + .switcher__slider::before {
   }
 
   input:checked + .switcher__slider::before {
-    transform: translateX(200px);
+    transform: none;
   }
 
   //.switcher__item--before {

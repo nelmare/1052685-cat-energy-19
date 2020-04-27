@@ -39,6 +39,7 @@
   text-decoration: $notunderline;
   color: $title-color;
   display: inline-block;
+  vertical-align: middle;
   width: 74px;
   margin-bottom: 13px;
 
@@ -61,6 +62,15 @@
 
 .catalog-item__button {
   display: block;
+
+  &:hover {
+    background-color: rgb(94, 170, 47);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgb(94, 170, 47);
+  }
 }
 
 .catalog-item--add {

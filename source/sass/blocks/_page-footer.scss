@@ -38,7 +38,7 @@
     //padding-left: 31px;
     //padding-right: 30px;
     padding-top: 52px;
-    padding-bottom: 62px;
+    padding-bottom: 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +46,7 @@
 
   .page-footer__logo-image {
     display: inline-block;
+    vertical-align: middle;
     margin: 0;
   }
 
