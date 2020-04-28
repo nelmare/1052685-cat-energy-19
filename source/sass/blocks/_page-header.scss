@@ -29,43 +29,11 @@
   justify-content: space-between;
   padding-top: 11px;
   padding-bottom: 12px;
-  //padding-left: 20px;
-  //padding-right: 20px;
-  //border-bottom: 1px solid rgb(217, 217, 217);
 }
 
 .page-header__wrapper--index {
   border-bottom: none;
 }
-//.page-header__toggle {
-//  position: absolute;
-//  top: 0;
-//  right: 0;
-//  z-index: 2;
-//
-//  display: block;
-//  width: 65px;
-//  height: 65px;
-//
-//  background-color: $mainback-color;
-//
-//  cursor: pointer;
-//  border: none;
-//}
-//
-//.main-nav--closed .page-header__toggle::before {
-//  content: "";
-//
-//  position: absolute;
-//  top: 24px;
-//  left: 21px;
-//
-//  width: 25px;
-//  height: 2px;
-//
-//  background-color: rgb(34, 34, 34);
-//  box-shadow: 0 8px 0 0 rgb(34, 34, 34), 0 16px 0 0 rgb(34, 34, 34);
-//}
 
 @media (min-width: $tablet-width) {
   .page-header {
@@ -76,7 +44,6 @@
   }
 
   .page-header__container {
-    //width: 708px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -108,13 +75,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    //width: 1300px;
     padding-top: 53px;
-    //margin-bottom: 321px;
-  }
-
-  .page-header__container {
-    //width: 1220px;
   }
 
   .page-header__logo-image {
@@ -138,6 +99,12 @@
       background-color: rgb(99, 167, 58);
       background-repeat: no-repeat;
       background-position: right center;
+
+      @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px 696px;
+      }
     }
   }
 }

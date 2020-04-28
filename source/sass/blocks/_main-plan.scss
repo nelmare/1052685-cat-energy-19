@@ -3,11 +3,6 @@
   margin: 0 auto;
 }
 
-//.main-plan__container {
-//  margin-right: -20px;
-//  margin-left: -20px;
-//}
-
 .main-plan__list {
   padding-top: 0;
   padding-bottom: 0;
@@ -15,7 +10,6 @@
 }
 
 .main-plan__item {
-  //width: 280px;
   padding-top: 31px;
   padding-bottom: 20px;
   padding-left: 20px;
@@ -146,13 +140,7 @@
     padding-top: 0;
   }
 
-  .main-plan__container {
-    //width: 708px;
-    //margin: 0 auto;
-  }
-
   .main-plan__item {
-    //width: 708px;
     padding-top: 76px;
     padding-right: 283px;
     padding-bottom: 60px;
@@ -266,15 +254,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-plan {
-    //padding-right: 40px;
-    //padding-left: 40px;
-  }
-
-  .main-plan__container {
-    //width: 1220px;
-  }
-
   .main-plan__list {
     display: flex;
     justify-content: space-between;

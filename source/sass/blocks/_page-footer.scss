@@ -3,7 +3,6 @@
 }
 
 .page-footer__container {
-  //margin: 0 auto;
   padding-top: 38px;
   padding-bottom: 22px;
 }
@@ -34,9 +33,6 @@
 @media (min-width: $tablet-width) {
   .page-footer__container {
     width: auto;
-    //margin: 0;
-    //padding-left: 31px;
-    //padding-right: 30px;
     padding-top: 52px;
     padding-bottom: 48px;
     display: flex;

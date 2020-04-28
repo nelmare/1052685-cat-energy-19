@@ -1,5 +1,4 @@
 .main-nav {
-  //width: 320px;
   margin: 0 auto;
   font-size: 20px;
   font-weight: 500;
@@ -25,10 +24,6 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  //.main-nav__toggle--open {
-  //  position: absolute;
-  //}
-
   .main-nav__toggle--open::before {
     content: "";
     position: absolute;
@@ -51,7 +46,7 @@
     height: 19px;
     top: 24px;
     left: 21px;
-    background-image: url("/img/icon-close.svg");
+    background-image: url("../img/icon-close.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -67,7 +62,6 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    //width: 440px;
     margin: 0;
     display: inline-block;
   }
@@ -82,8 +76,3 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav {
-    //width: 480px;
-  }
-}

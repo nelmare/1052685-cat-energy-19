@@ -49,20 +49,7 @@
   text-transform: $uppercase;
 }
 
-.form__line--catname {
-  //width: 229px;
-}
-
-.form__line--weight {
-  //width: 207px;
-}
-
-.form__line--age {
-  //width: 172px;
-}
-
 .form__block--radio {
-  //width: 320px;
   margin: 0 -20px;
   border: solid 1px rgb(237, 237, 237);
 }
@@ -204,16 +191,6 @@
   }
 }
 
-//.form__line--email {
-//  //width: 217px;
-//
-//}
-//
-//.form__line--phone {
-//  //width: 200px;
-//
-//}
-
 .form__column {
   position: relative;
   //display: flex;
@@ -322,7 +299,7 @@
   content: "";
   width: 30px;
   height: 30px;
-  background-image: url("/img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-size: 22px 17px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -432,25 +409,11 @@
     box-sizing: border-box;
   }
 
-  .form__line--catname {
-    //width: 567px;
-  }
-
-  .form__line--weight {
-    //width: 540px;
-  }
-
-  .form__line--age {
-    //width: 497px;
-  }
-
   .form__block--cat {
     padding-bottom: 55px;
   }
 
   .form__block--radio {
-    //padding-left: 40px;
-    //width: 630px;
     margin: 0 auto;
   }
 
@@ -522,21 +485,9 @@
     }
   }
 
-  .form__block--contacts {
-    //position: relative;
-  }
-
-  .form__line--email {
-    //width: 552px;
-  }
-
   .form__icon--mail {
     position: absolute;
     right: 18px;
-  }
-
-  .form__line--phone {
-    //width: 532px;
   }
 
   .form__icon--phone {
@@ -563,7 +514,6 @@
   }
 
   .form__textarea {
-    //width: 631px;
     height: 174px;
     padding: 13px 18px;
   }
@@ -609,7 +559,7 @@
     content: "";
     width: 40px;
     height: 40px;
-    background-image: url("/img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: center center;
     position: absolute;
@@ -657,7 +607,6 @@
   }
 
   .form__wrapper {
-    //width: 1220px;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
@@ -666,18 +615,6 @@
 
   .form__group:last-child {
     margin-bottom: 0;
-  }
-
-  .form__line--catname {
-    //width: 506px;
-  }
-
-  .form__line--weight {
-    //width: 479px;
-  }
-
-  .form__line--age {
-    //width: 436px;
   }
 
   .form__block--radio {
@@ -723,14 +660,6 @@
     display: flex;
   }
 
-  .form__column {
-    //width: none;
-  }
-
-  .form-column--email {
-    //width: 43%;
-  }
-
   .form__group--email {
     margin-right: 78px;
     margin-bottom: 0;
@@ -744,10 +673,6 @@
   .form__icon--mail {
     position: absolute;
     left: 453px;
-  }
-
-  .form-column--phone {
-    //width: 38%;
   }
 
   .form__icon--phone {
@@ -766,7 +691,6 @@
   }
 
   .form__textarea {
-    //width: 1220px;
     padding: 13px 18px;
   }
 
