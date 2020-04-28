@@ -1,8 +1,5 @@
 .intro {
   padding-top: 27px;
-  //background-image: url("../img/index-background-mobile@1x.jpg");
-  //background-position: top;
-  //background-repeat: no-repeat;
   position: relative;
 
   &::after {
@@ -18,17 +15,13 @@
     left: 50%;
     transform: translateX(-50%);
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: cover;
+    }
   }
-}
-
-.intro__container {
-  //width: 280px;
-  //margin-left: auto;
-  //margin-right: auto;
-}
-
-.intro__wrapper {
-  //position: relative;
 }
 
 .intro__description {
@@ -67,17 +60,13 @@
 }
 
 .intro__button {
-  //width: 280px;
   display: block;
-  //vertical-align: middle;
   font-size: 14px;
   line-height: 18px;
   color: $mainback-color;
   text-decoration: $notunderline;
   margin: 0 auto;
   padding-top: 11px;
-  //padding-right: 74px;
-  //padding-bottom: 11px;
   padding-bottom: 11px;
   text-align: center;
 
@@ -85,10 +74,13 @@
     background-color: rgb(94, 170, 47);
   }
 
-  &:focus,
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: rgb(94, 170, 47);
+  }
+
+  &:-moz-focusring {
+    outline: 2px dotted midnightblue;
   }
 }
 
@@ -98,8 +90,6 @@
     width: auto;
     margin: 0;
     padding-top: 60px;
-    //padding-left: 88px;
-    //width: 709px;
 
     &::after {
       display: none;
@@ -107,14 +97,12 @@
   }
 
   .intro__container {
-    //width: 709px;
     position: relative;
     display: flex;
     flex-direction: column;
   }
 
   .intro__wrapper {
-    //width: 414px;
     padding-left: 87px;
   }
 
@@ -141,7 +129,6 @@
     font-size: 20px;
     line-height: 20px;
     padding-top: 15px;
-    //padding-right: 29px;
     padding-bottom: 15px;
     margin: 0;
     margin-left: 89px;
@@ -166,14 +153,11 @@
 @media (min-width: $desktop-width) {
   .intro {
     padding-top: 109px;
-    //margin: 0;
     margin-bottom: 268px;
   }
 
   .intro__container {
     display: flex;
-    //width: 922px;
-    //margin: 0;
     padding-left: 121px;
   }
 
@@ -181,7 +165,6 @@
     width: 415px;
     padding-left: 0;
     text-align: left;
-    //margin-bottom: ;
     z-index: 2;
   }
 
@@ -214,8 +197,6 @@
     font-size: 20px;
     line-height: 20px;
     margin-right: auto;
-    //top: 235px;
-    //left: -2px;
     margin-left: 0;
   }
 }
