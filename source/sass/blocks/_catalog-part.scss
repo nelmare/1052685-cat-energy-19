@@ -149,10 +149,10 @@
   .catalog-part {
     margin-bottom: 54px;
     padding-top: 22px;
+    max-width: 1300px;
   }
 
   .catalog-part__container {
-    //max-width: 1220px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -175,7 +175,7 @@
     &::after {
       width: 108vw;
       top: 29px;
-      left: -81px;
+      left: -127px;
     }
   }
 
