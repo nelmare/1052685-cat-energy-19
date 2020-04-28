@@ -61,7 +61,7 @@
     flex-shrink: 0;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-powder@2x.png");
       background-size: 50px 50px;
     }
@@ -81,7 +81,7 @@
     flex-shrink: 0;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-dining@2x.png");
       background-size: 50px 50px;
     }
@@ -101,7 +101,7 @@
     flex-shrink: 0;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-clock@2x.png");
       background-size: 50px 50px;
     }
@@ -134,7 +134,6 @@
     max-width: 245px;
     margin-top: 32px;
     margin-bottom: 90px;
-    box-sizing: border-box;
     padding-left: 0;
     padding-top: 123px;
     padding-right: 0;
