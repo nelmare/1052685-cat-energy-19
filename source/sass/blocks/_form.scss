@@ -382,9 +382,14 @@
 .form__button {
   display: block;
   margin-bottom: 21px;
+  border: none;
 
   &:hover {
     background-color: rgb(94, 170, 47);
+  }
+
+  &:-moz-focusring {
+    outline: 2px dotted midnightblue;
   }
 
   &:active {

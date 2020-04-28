@@ -94,6 +94,14 @@ input:focus + .switcher__slider {
   box-shadow: 0 0 1px rgb(205, 205, 205);
 }
 
+input:-moz-focusring ~ .switcher__slider {
+  outline: 2px dotted midnightblue;
+}
+
+input:focus ~ .switcher__slider {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
 input:checked + .switcher__slider::before {
   transform: translateX(40px);
 }
@@ -102,6 +110,10 @@ input:checked + .switcher__slider::before {
   text-transform: $uppercase;
   border: none;
   background: inherit;
+
+  &:-moz-focusring {
+    outline: 2px dotted midnightblue;
+  }
 }
 
 @media (min-width: $tablet-width) {

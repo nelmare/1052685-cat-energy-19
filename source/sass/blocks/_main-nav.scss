@@ -18,6 +18,10 @@
   border: none;
   padding: 0 0;
   height: 65px;
+
+  &:-moz-focusring {
+    outline: 2px dotted midnightblue;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
