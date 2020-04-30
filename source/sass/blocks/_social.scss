@@ -34,7 +34,8 @@
     fill: $button-color;
   }
 
-  &:active .social__icon {
+  &:active .social__icon,
+  &:focus .social__icon {
     fill: rgba(104, 183, 56, 0.3);
   }
 }
