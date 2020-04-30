@@ -257,6 +257,7 @@
   .main-plan__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .main-plan__item {

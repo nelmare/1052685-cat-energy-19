@@ -255,16 +255,23 @@
 
   .advantages__container {
     margin: 0 auto;
+    padding-bottom: 0;
   }
 
   .advantages__title {
     @include margin-reset;
-    margin-bottom: 183px;
+    //margin-bottom: 0;
   }
 
   .advantages__item {
     @include margin-reset;
-    margin-bottom: 55px;
+    margin-bottom: 71px;
+    margin-top: 184px;
+    margin-right: auto;
+  }
+
+  .advantages__item:nth-child(4n) {
+    margin-right: 0;
   }
 
   .advantages__item--usefulness {

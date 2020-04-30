@@ -94,7 +94,7 @@
   }
 }
 
-.catalog-title--add {
+.catalog-item__title--add {
   @include margin-reset;
   margin-bottom: 8px;
   text-align: center;
@@ -225,7 +225,7 @@
     }
   }
 
-  .catalog-title--add {
+  .catalog-item__title--add {
     font-size: 20px;
   }
 

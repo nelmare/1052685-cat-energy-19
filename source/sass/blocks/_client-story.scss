@@ -191,7 +191,7 @@
 
 @media (min-width: $desktop-width) {
   .client-story__section-container {
-    padding-top: 4px;
+    padding-top: 0;
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
@@ -206,7 +206,7 @@
 
   .client-story__title {
     margin-bottom: 146px;
-    padding-top: 55px;
+    padding-top: 54px;
   }
 
   .client-story__text {
